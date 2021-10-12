@@ -1,0 +1,94 @@
+/* Desktop and Website Styling */
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+    color: #696969;
+    font-family: Raleway, Arial, sans-serif;
+    font-size: 16px;
+}
+
+div#black-container {
+    background-color: #000000;
+    color: #FFFFFF;
+    padding: 30px 100px;
+}
+
+div#nav-links {
+    background-color: #000000;
+    padding: 20px 0;
+}
+
+div#nav-links a {
+    text-decoration: none;
+    width: 100px;
+    text-align: center;
+    font-family: Poppins, Arial, sans-serif;
+}
+
+h1#ha {
+    font-family: 'Tenor Sans', Arial, sans-serif;
+    font-size: 30px;
+    margin: 0 30px 0 0 !important;
+    padding: 0 !important;
+    width: auto;
+}
+
+div#nav-links a:hover {
+    background-color: #323436;
+}
+
+div#heading-text {
+    padding: 0 !important;
+    font-size: 30px;
+    font-family: Poppins, Arial, sans-serif
+}
+
+h2 {
+    padding: 10px 0;
+}
+
+div#hero-image {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+img#sunflower {
+    width: 600px;
+    height: auto;
+    padding: 0 !important;
+    margin: 0;
+}
+
+/* Mobile Styling */
+
+@media screen and (max-width: 600px) {
+
+    div#nav-links {
+        padding: 20px 30px;
+    }
+
+    h1#ha {
+        font-size: 20px;
+        margin: 0 !important;
+    }
+
+    button#icon {
+        float: right;
+    }
+
+    div#mobile-menu a {
+        text-align: center;
+        padding: 5px 0;
+        font-size: 16px;
+        width: 100%;
+        display: inline-block;
+    }
+
+    hr {
+        margin: 7px 0 !important;
+        opacity: 0.5;
+    }
+}

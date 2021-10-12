@@ -1,0 +1,14 @@
+Website framework, some CSS classes, many other functions:
+https://www.w3schools.com/w3css/default.asp
+
+Smooth scrolling function:
+https://gomakethings.com/how-to-animate-scrolling-to-anchor-links-with-one-line-of-css/
+
+Protect my email and phone from spam bots:
+https://www.nelsonpires.com/development/protect-your-email-and-phone-number-from-spam-bots
+
+Highlight nav menu buttons on scroll:
+https://www.youtube.com/watch?v=RsPWEmfOQdU&ab_channel=WEBCIFAR
+
+LendingTree phone graphics: Adobe Photoshop 2021 free template
+
