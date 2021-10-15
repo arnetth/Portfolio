@@ -1,4 +1,4 @@
-/* Desktop and Website Styling */
+/* ********** Desktop and Website Styling ********** */
 
 html {
 	scroll-behavior: smooth;
@@ -13,19 +13,17 @@ body {
 div#black-container {
     background-color: #000000;
     color: #FFFFFF;
-    padding: 30px 100px;
 }
 
-div#nav-links {
-    background-color: #000000;
-    padding: 20px 0;
-}
+/* Nav Styling */
 
-div#nav-links a {
-    text-decoration: none;
-    width: 100px;
-    text-align: center;
-    font-family: Poppins, Arial, sans-serif;
+div#navbar {
+    width: 100%;
+    padding: 60px 0 10px 100px;
+    overflow: hidden;
+    position: fixed;
+    transition: 0.3s;
+    z-index: 99;
 }
 
 h1#ha {
@@ -34,52 +32,205 @@ h1#ha {
     margin: 0 30px 0 0 !important;
     padding: 0 !important;
     width: auto;
+    transition: 0.3s;
 }
 
-div#nav-links a:hover {
+div#navbar a {
+    text-decoration: none;
+    width: 100px;
+    text-align: center;
+    font-family: Poppins, Arial, sans-serif;
+}
+
+div#navbar a:hover {
     background-color: #323436;
+    transition: .3s ease;
+}
+
+/* Hero Styling */
+header {
+    position: relative;
 }
 
 div#heading-text {
-    padding: 0 !important;
-    font-size: 30px;
-    font-family: Poppins, Arial, sans-serif
+    font-size: 30px !important;
+    font-family: Poppins, Arial, sans-serif;
+    padding: 50px 0 0 100px;
 }
 
-h2 {
-    padding: 10px 0;
+p#my-style {
+    margin-bottom: 50px;
+    font-weight: 300;
+}
+
+a#work-btn {
+    background-color: #004AAD;
+    font-size: 18px;
+    text-decoration: none;
+    width: 200px;
+    height: auto;
+    padding: 15px 30px;
+    text-align: center;
+    display: inline-block;
+}
+
+a#work-btn:hover {
+    background-color: #07336d;
+    transition: .3s ease;
+}
+
+a#resume-btn {
+    font-size: 18px;
+    text-decoration: none;
+    width: 150px;
+    height: auto;
+    padding: 10px 30px;
+    text-align: center;
+    border: 5px solid #FFFFFF;
+    margin-left: 20px;
+    display: inline-block;
+}
+
+a#resume-btn:hover {
+    background-color: #323436;
+    transition: .3s ease;
 }
 
 div#hero-image {
-    padding: 0 !important;
-    margin: 0 !important;
+    padding-left: 100px;
 }
 
 img#sunflower {
-    width: 600px;
+    max-width: 600px;
     height: auto;
-    padding: 0 !important;
-    margin: 0;
 }
 
-/* Mobile Styling */
+/* Body Content Styling */
+div#container {
+    background-color: #FFFFFF;
+    padding: 30px 100px;
+}
+
+h3 {
+    font-family: 'Tenor Sans', Arial, sans-serif;
+    font-size: 24px;
+    color: #444440;
+}
+
+section#summary-icons {
+    margin: 20px 50px;
+    text-align: center;
+}
+
+section#summary-icons p {
+    margin: 20px 50px 50px 50px;
+    text-align: center;
+    font-size: 18px;
+    font-family: Poppins, Arial, sans-serif;
+}
+
+section#summary-icons i {
+    font-size: 72px;
+    color: #444440;
+    margin: 10px 0;
+}
+
+div.mleft-30 {
+    margin-left: 30px;
+}
+
+div.box-container {
+    position: relative;
+    width: 393px;
+    display: inline-block;
+    margin-bottom: 30px;
+}
+
+img.work-box {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+div.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+  
+div.box-container:hover div.overlay {
+    opacity: 1;
+}
+  
+div.text {
+    color: #FFFFFF;
+    background-color: #004AAD;
+    font-size: 18px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    border: 1px solid #FFFFFF;
+    padding: 10px 14px;
+    text-align: center;
+}
+
+/* Footer Styling */
+footer {
+    padding-top: 50px;
+}
+
+h3#thanks {
+    text-align: center;
+}
+
+a#jump-top {
+    float: right;
+    text-align: right;
+}
+
+img#ha-logo {
+    width: 50px;
+    margin: 0 auto;
+    display: block;
+    padding-top: 50px;
+}
+
+/* **********Mobile Styling ********** */
 
 @media screen and (max-width: 600px) {
 
-    div#nav-links {
-        padding: 20px 30px;
+    /* Nav Styling */
+    div#navbar {
+        padding: 50px 30px;
+        z-index: 100;
+        background-color: #000000;
     }
 
     h1#ha {
-        font-size: 20px;
-        margin: 0 !important;
+        font-size: 22px;
     }
 
     button#icon {
         float: right;
+        padding: 0;
+        margin-bottom: 10px;
     }
 
-    div#mobile-menu a {
+    nav#mobile-menu {
+        width: 100%;
+        margin: 10px;
+    }
+
+    nav#mobile-menu a {
         text-align: center;
         padding: 5px 0;
         font-size: 16px;
@@ -90,5 +241,89 @@ img#sunflower {
     hr {
         margin: 7px 0 !important;
         opacity: 0.5;
+    }
+
+    /* Header Styles */
+
+    header {
+        padding-top: 150px;
+    }
+
+    div#heading-text {
+        font-size: 20px !important;
+        padding: 0 30px;
+    }
+
+    p#my-style {
+        margin-bottom: 30px;
+    }
+
+    div#hero-image {
+        padding: 30px 0 0 0;
+        z-index: 90;
+    }
+    
+    img#sunflower {
+        max-width: 500px;
+        margin: 0 auto;
+        display: block;
+    }
+
+    a#work-btn {
+        font-size: 16px;
+        width: 250px;
+        padding: 15px 10px;
+    }
+
+    a#resume-btn {
+        font-size: 16px;
+        width: 150px;
+        padding: 12px 10px;
+        border: 3px solid #FFFFFF;
+    }
+
+    /* Body Styles */
+    div#container {
+        padding: 20px 30px;
+    }
+
+    section#summary-icons {
+        margin: 20px 0;
+        text-align: center;
+    }
+    
+    section#summary-icons p {
+        margin: 5px 30px 30px 30px;
+        text-align: center;
+        font-size: 18px;
+    }
+    
+    section#summary-icons i {
+        font-size: 48px;
+        margin: 10px 0;
+    }
+
+    /* Footer Styles */
+    p#footer-text {
+        font-size: 12px;
+    }
+
+    h3#thanks {
+        font-size: 20px;
+    }
+
+    a#jump-top {
+        text-align: center;
+        float: none;
+        margin: 0 auto 20px auto;
+        display: block;
+    }
+
+    img#ha-logo {
+        width: 50px;
+        height: auto;
+        margin: 0 auto;
+        display: block;
+        padding-top: 30px;
     }
 }

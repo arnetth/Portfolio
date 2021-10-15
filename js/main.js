@@ -1,6 +1,3 @@
-const sections = document.querySelectorAll('section');
-const navLi = document.querySelectorAll('.nav-links ul li');
-
 // opening mobile menu on click
 function openMenu() {
     var x = document.getElementById("icon");
@@ -17,12 +14,8 @@ function openMenu() {
     }
 }
 
-// closing mobile menu on click
-function closeMenu() {
-    var x = document.getElementById("mobile");
-    x.className = x.className.replace(" w3-show", "");
-    document.getElementById("icon").innerHTML = "&#9776;";
-}
+const sections = document.querySelectorAll('section');
+const navLi = document.querySelectorAll('.nav-links ul li');
 
 // highlighting menu on scroll
 window.addEventListener('scroll', ()=> {
@@ -45,3 +38,42 @@ window.addEventListener('scroll', ()=> {
         }
     })
 })
+
+// shrink navbar on scroll
+if (document.documentElement.clientWidth > 600) {
+	window.onscroll = function() {scrollFunctionDesktop()};
+
+    var container = document.getElementById("container");
+        
+    function scrollFunctionDesktop() {
+        if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+        document.getElementById("navbar").style.padding = "30px 0 10px 100px";
+        document.getElementById("ha").style.fontSize = "25px";
+        document.getElementById("navbar").style.backgroundColor = "rgba(0, 0, 0, 1)";
+        } else {
+        document.getElementById("navbar").style.padding = "60px 0 10px 100px";
+        document.getElementById("navbar").style.backgroundColor = "rgba(0, 0, 0, 0)";
+        document.getElementById("ha").style.fontSize = "30px";
+        }
+    }
+}
+
+if (document.documentElement.clientWidth < 600) {
+	window.onscroll = function() {scrollFunctionMobile()};
+
+    var container = document.getElementById("container");
+        
+    function scrollFunctionMobile() {
+        if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+        document.getElementById("navbar").style.padding = "20px 30px 7px 30px";
+        document.getElementById("ha").style.fontSize = "18px";
+        document.getElementById("navbar").style.backgroundColor = "rgba(0, 0, 0, 1)";
+        } else {
+        document.getElementById("navbar").style.padding = "50px 30px";
+        document.getElementById("navbar").style.backgroundColor = "rgba(0, 0, 0, 0)";
+        document.getElementById("ha").style.fontSize = "22px";
+        }
+    }
+}
+
+

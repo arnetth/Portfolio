@@ -7,8 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tenor+Sans|Poppins|Raleway">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap">
+<script src="https://kit.fontawesome.com/508221f109.js" crossorigin="anonymous"></script>
 
 <link rel="stylesheet" href="css/main.css">
 <link rel="stylesheet" href="css/hamburgers.css">
@@ -20,50 +21,52 @@
   <div id="black-container">
 
     <!-- Nav Container -->
-    <div id="nav-links" class="w3-bar">
+    <div id="navbar" class="w3-bar">
       <h1 id="ha" class="w3-bar-item w3-animate-opacity">Hannah Arnett</h1>
 
-      <!-- Desktop Menu -->
-      <a href="homev2.html" class="w3-bar-item w3-hide-small w3-animate-opacity w3-hide-medium">home</a>
-      <a href="#work" class="w3-bar-item w3-hide-small w3-animate-opacity w3-hide-medium">work</a>
-      <a href="#about" class="w3-bar-item w3-hide-small w3-animate-opacity w3-hide-medium">about</a>
-      <a href="#contact" class="w3-bar-item w3-hide-small w3-animate-opacity w3-hide-medium">contact</a>
-
       <!-- Mobile Menu -->
-      <button id="icon" class="hamburger hamburger--squeeze w3-bar-item content w3-animate-opacity w3-hide-large" type="button" onclick="openMenu()">
+      <button id="icon" alt="button to open mobile menu" class="hamburger hamburger--squeeze w3-bar-item content w3-animate-opacity w3-hide-large" type="button" onclick="openMenu()">
         <span class="hamburger-box">
           <span class="hamburger-inner"></span>
         </span>
       </button>
 
-      <div id="mobile-menu" class="w3-bar-block w3-hide w3-hide-large">
-        <a href="homev2.html" class="w3-bar-item content" onclick="closeMenu()">home</a>
+      <nav id="mobile-menu" class="w3-bar-block w3-hide w3-hide-large">
+        <a href="#black-container" class="w3-bar-item content" onclick="closeMenu()">home</a>
         <hr>
         <a href="#work" class="w3-bar-item w3-mobile" onclick="closeMenu()">work</a>
         <hr>
         <a href="#about" class="w3-bar-item w3-mobile" onclick="closeMenu()">about</a>
         <hr>
         <a href="#contact" class="w3-bar-item w3-mobile" onclick="closeMenu()">contact</a>
-      </div>
+      </nav>
+
+      <!-- Desktop Menu -->
+      <nav id="desktop-menu">
+        <a href="#black-container" class="w3-bar-item w3-hide-small w3-animate-opacity w3-hide-medium">home</a>
+        <a href="#work" class="w3-bar-item w3-hide-small w3-animate-opacity w3-hide-medium">work</a>
+        <a href="#about" class="w3-bar-item w3-hide-small w3-animate-opacity w3-hide-medium">about</a>
+        <a href="#contact" class="w3-bar-item w3-hide-small w3-animate-opacity w3-hide-medium">contact</a>
+      </nav>
+
     </div>
     <!-- END Nav Container -->
 
     <!-- Heading Container -->
-    <section id="home">
+    <header>
       <div class="w3-cell-row">
         <div class="w3-container w3-cell w3-mobile w3-animate-top w3-cell-middle" id="heading-text">
-          <h2 style="font-weight: bold;">Hey, I'm Hannah.<br>I'm a front-end developer with a vision for digital marketing.</h2>
-          <h2>My style is minimalistic, with a spoonful of compassion.</h2>
-          <div class="w3-bar">
-            
-          </div>
+          <p style="font-weight: bold;">Hey, I'm Hannah.<br>I'm a front-end developer with a vision for&nbsp;digital&nbsp;marketing.</p>
+          <p id="my-style">My style is minimalistic, with a spoonful of&nbsp;compassion.</p>
+          <a href="#work" id="work-btn" alt="button to jump to work experiences">see my work</a>
+          <a href="Hannah-Arnett-Resume.pdf" id="resume-btn" target="_blank" alt="button to open resume">resume</a>
         </div>
         
-        <div class="w3-container w3-cell w3-mobile w3-animate-right" id="hero-image">
-          <img src="img/headshot-transparent.png" id="sunflower" alt="Hannah Arnett headshot" />
+        <div class="w3-cell w3-mobile w3-animate-right" id="hero-image">
+          <img src="img/headshot-transparent.png" id="sunflower" alt="Hannah holding a sunflower" />
         </div>
       </div>
-    </section>
+    </header>
     <!-- END Heading Container -->
 
     <!-- END Black Container -->
@@ -72,9 +75,120 @@
   <div id="container">
 
     <!-- Body Container -->
+    <section id="summary-icons">
+      <div class="w3-cell-row">
+        <div class="w3-cell w3-mobile">
+          <i id="grad" class="fas fa-graduation-cap"></i>
+          <p>Graduating from Purdue University with B.S. in <strong>May 2022</strong></p>
+        </div>
+        <div class="w3-cell w3-mobile">
+          <i id="positions" class="fas fa-user-tie"></i>
+          <p>Looking for full-time positions<br>(willing to relocate)</p>
+        </div>
+        <div class="w3-cell w3-mobile">
+          <i id="exp" class="fas fa-laptop-code"></i>
+          <p>Experience in front-end development, UX design, and entrepreneurship</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="work">
+      <h3>Work Experiences</h3>
+      <hr>
+      <div class="box-container">
+        <a href="lendingtree.html" target="_self" alt="link to my LendingTree internship page">
+          <img src="img/lt.png" alt="LendingTree emails displayed on cellphone screens" class="work-box" />
+          <div class="overlay">
+            <div class="text">LendingTree</div>
+          </div>
+        </a>
+      </div>
+
+      <div class="box-container mleft-30">
+        <a href="pu.html" target="_self" alt="link to my Purdue University jobs page">
+          <img src="img/pu.png" alt="Purdue University websites displayed on Mac screens" class="work-box" />
+          <div class="overlay">
+            <div class="text">Purdue University</div>
+          </div>
+        </a>
+      </div>
+
+      <h3>Projects</h3>
+      <hr>
+      <div class="box-container">
+        <a href="pes.html" target="_self" alt="link to my Power Engineering Society project page">
+        <img src="img/pes.png" alt="Power Engineering Society website displayed on laptop" class="work-box" />
+          <div class="overlay">
+            <div class="text">Power Engineering Society</div>
+          </div>
+        </a>
+      </div>
+
+      <div class="box-container mleft-30">
+        <a href="portfolio.html" target="_self" alt="link to my portfolio project page">
+          <img src="img/portfolio.png" alt="Purdue University websites displayed on Mac screens" class="work-box" />
+          <div class="overlay">
+            <div class="text">My Portfolio</div>
+          </div>
+        </a>
+      </div>
+
+      <div class="box-container mleft-30">
+        <a href="cultures.html" target="_self" alt="link to my Intersection of Cultures project page">
+          <img src="img/ioc.png" alt="snapshot of Intersection of Cultures Youtube video" class="work-box" />
+          <div class="overlay">
+            <div class="text">Intersection of Cultures</div>
+          </div>
+        </a>
+      </div>
+
+      <h3>Coursework Highlights</h3>
+      <hr>
+      <div class="box-container">
+        <a href="python.html" target="_self" alt="link to my Python certification page">
+          <img src="img/python.png" alt="LendingTree emails displayed on cellphone screens" class="work-box" />
+          <div class="overlay">
+            <div class="text">Python Certification</div>
+          </div>
+        </a>
+      </div>
+
+      <div class="box-container mleft-30">
+        <a href="lendingtree.html" target="_self" alt="link to my LendingTree internship page">
+          <img src="img/pu.png" alt="Purdue University websites displayed on Mac screens" class="work-box" />
+          <div class="overlay">
+            <div class="text">Purdue University</div>
+          </div>
+        </a>
+      </div>
+
+      <div class="box-container mleft-30">
+        <a href="lendingtree.html" target="_self" alt="link to my user experience design page">
+          <img src="img/ux.png" alt="app mockup screens" class="work-box" />
+          <div class="overlay">
+            <div class="text">User Experience Design</div>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <section id="about">
+
+    </section>
+
+    <section id="contact">
+
+    </section>
     <!-- END Body Container -->
 
     <!-- Footer Container -->
+    <footer>
+      <a href="#black-container" id="jump-top" alt="jump to top of page">back to top</a>
+      <h3 id="thanks">Thanks for checking me out!</h3>
+
+      <a href="home.html"><img src="img/ha-logo.png" alt="Hannah Arnett's logo" id="ha-logo" /></a>
+      <p id="footer-text" style="text-align: center;">designed and developed by Hannah Arnett, 2021</p>
+    </footer>
     <!-- END Footer Container -->
 
   <!-- END Container -->
