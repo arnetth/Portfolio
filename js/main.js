@@ -14,31 +14,6 @@ function openMenu() {
     }
 }
 
-const sections = document.querySelectorAll('section');
-const navLi = document.querySelectorAll('.nav-links ul li');
-
-// highlighting menu on scroll
-window.addEventListener('scroll', ()=> {
-    let current = '';
-
-    sections.forEach( section => {
-        const sectionTop = section.offsetTop;
-        const sectionHeight = section.clientHeight;
-
-        if(scrollY >= (sectionTop - sectionHeight / 2)) {
-            current = section.getAttribute('id');
-        }
-    })
-
-    navLi.forEach( li => {
-        li.classList.remove('active');
-
-        if(li.classList.contains(current)){
-            li.classList.add('active');
-        }
-    })
-})
-
 // shrink navbar on scroll
 if (document.documentElement.clientWidth > 600) {
 	window.onscroll = function() {scrollFunctionDesktop()};
@@ -46,14 +21,16 @@ if (document.documentElement.clientWidth > 600) {
     var container = document.getElementById("container");
         
     function scrollFunctionDesktop() {
-        if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-        document.getElementById("navbar").style.padding = "30px 0 10px 100px";
-        document.getElementById("ha").style.fontSize = "25px";
-        document.getElementById("navbar").style.backgroundColor = "rgba(0, 0, 0, 1)";
+        if (document.body.scrollTop > container.offsetTop || document.documentElement.scrollTop > container.offsetTop) {
+            document.getElementById("navbar").style.position = "fixed";
+            document.getElementById("navbar").style.padding = "20px 0 10px 100px";
+            document.getElementById("ha").style.fontSize = "25px";
+            document.getElementById("navbar").style.backgroundColor = "rgba(0, 0, 0, 1)";
         } else {
-        document.getElementById("navbar").style.padding = "60px 0 10px 100px";
-        document.getElementById("navbar").style.backgroundColor = "rgba(0, 0, 0, 0)";
-        document.getElementById("ha").style.fontSize = "30px";
+            document.getElementById("navbar").style.position = "static";
+            document.getElementById("navbar").style.padding = "50px 0 10px 100px";
+            document.getElementById("navbar").style.backgroundColor = "rgba(0, 0, 0, 0)";
+            document.getElementById("ha").style.fontSize = "30px";
         }
     }
 }
@@ -64,14 +41,16 @@ if (document.documentElement.clientWidth < 600) {
     var container = document.getElementById("container");
         
     function scrollFunctionMobile() {
-        if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-        document.getElementById("navbar").style.padding = "20px 30px 7px 30px";
-        document.getElementById("ha").style.fontSize = "18px";
-        document.getElementById("navbar").style.backgroundColor = "rgba(0, 0, 0, 1)";
+        if (document.body.scrollTop > container.offsetTop || document.documentElement.scrollTop > container.offsetTop) {
+            document.getElementById("navbar").style.position = "fixed";
+            document.getElementById("navbar").style.padding = "20px 30px";
+            document.getElementById("ha").style.fontSize = "18px";
+            document.getElementById("navbar").style.backgroundColor = "rgba(0, 0, 0, 1)";
         } else {
-        document.getElementById("navbar").style.padding = "50px 30px";
-        document.getElementById("navbar").style.backgroundColor = "rgba(0, 0, 0, 0)";
-        document.getElementById("ha").style.fontSize = "22px";
+            document.getElementById("navbar").style.position = "static";
+            document.getElementById("navbar").style.padding = "50px 30px";
+            document.getElementById("navbar").style.backgroundColor = "rgba(0, 0, 0, 1)";
+            document.getElementById("ha").style.fontSize = "22px";
         }
     }
 }

@@ -19,11 +19,9 @@ div#black-container {
 
 div#navbar {
     width: 100%;
-    padding: 60px 0 10px 100px;
+    padding: 50px 0 10px 100px;
     overflow: hidden;
-    position: fixed;
     transition: 0.3s;
-    z-index: 99;
 }
 
 h1#ha {
@@ -49,13 +47,14 @@ div#navbar a:hover {
 
 /* Hero Styling */
 header {
-    position: relative;
+    position: static;
+    padding-left: 100px;
 }
 
 div#heading-text {
     font-size: 30px !important;
     font-family: Poppins, Arial, sans-serif;
-    padding: 50px 0 0 100px;
+    padding: 0;
 }
 
 p#my-style {
@@ -92,16 +91,17 @@ a#resume-btn {
 }
 
 a#resume-btn:hover {
-    background-color: #323436;
+    background-color: #FFFFFF;
+    color: #444440;
     transition: .3s ease;
 }
 
 div#hero-image {
-    padding-left: 100px;
+    padding-left: 120px;
 }
 
 img#sunflower {
-    max-width: 600px;
+    max-width: 500px;
     height: auto;
 }
 
@@ -111,19 +111,23 @@ div#container {
     padding: 30px 100px;
 }
 
-h3 {
+h2 {
     font-family: 'Tenor Sans', Arial, sans-serif;
     font-size: 24px;
     color: #444440;
 }
 
+div.container {
+    margin: 20px 0;
+}
+
 section#summary-icons {
-    margin: 20px 50px;
+    margin: 0 50px 50px 0;
     text-align: center;
 }
 
 section#summary-icons p {
-    margin: 20px 50px 50px 50px;
+    margin: 0 50px;
     text-align: center;
     font-size: 18px;
     font-family: Poppins, Arial, sans-serif;
@@ -139,48 +143,115 @@ div.mleft-30 {
     margin-left: 30px;
 }
 
-div.box-container {
-    position: relative;
+div.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     width: 393px;
+    height: auto;
+    text-align: center;
     display: inline-block;
     margin-bottom: 30px;
+    transition: 0.3s;
 }
 
-img.work-box {
+div.card a {
+    text-decoration: none;
+}
+
+img.card-image {
     width: 100%;
     height: auto;
+}
+
+div.card-container h3 {
+    font-family: Poppins, Arial, sans-serif;
+    font-size: 20px;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.card-container {
+    padding: 2px 16px;
+}
+
+img#img-professional {
+    width: 270px;
+    height: auto;
+}
+
+a#resume-btn-full {
+    display: block;
+    margin: 20px 10px 10px 0;
+    background-color: #004AAD;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 15px 90px;
+    text-align: center;
+    width: 270px;
+    height: auto;
+}
+
+a#resume-btn-full:hover {
+    background-color: #07336d;
+    transition: .3s ease;
+}
+
+div#quote-container {
+    padding: 10px 20px 10px 10px;
+    width: 70%;
+    margin: 30px auto;
     display: block;
 }
 
-div.overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    transition: .5s ease;
-    background-color: rgba(0, 0, 0, 0.5);
+i#left-quote {
+    float: left;
+    color: #444440;
+    font-size: 24px;
 }
-  
-div.box-container:hover div.overlay {
-    opacity: 1;
+
+div#quote-container p {
+    padding-left: 40px;
+    line-height: 200%;
 }
-  
-div.text {
-    color: #FFFFFF;
-    background-color: #004AAD;
-    font-size: 18px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    border: 1px solid #FFFFFF;
-    padding: 10px 14px;
-    text-align: center;
+
+section#contact p {
+    line-height: 200%;
+}
+
+/* protects my contact information */
+span.rev {
+    unicode-bidi:bidi-override;
+    direction:rtl;
+}
+
+span.rev.email a:before {
+    content:"ude.eudrup";
+}
+
+span.rev.email a:after {
+    content:"detsmloh";
+}
+
+span.rev.phone a:before {
+    content:"6006-055-";
+}
+
+span.email a:hover {
+    color: #929292;
+}
+
+span.phone a:hover {
+    color: #929292;
+}
+
+section#contact i {
+    font-size: 50px;
+    color: #444440;
+}
+
+section#contact i:hover {
+    color: #929292;
 }
 
 /* Footer Styling */
@@ -188,7 +259,7 @@ footer {
     padding-top: 50px;
 }
 
-h3#thanks {
+h2#thanks {
     text-align: center;
 }
 
@@ -222,12 +293,12 @@ img#ha-logo {
     button#icon {
         float: right;
         padding: 0;
-        margin-bottom: 10px;
     }
 
     nav#mobile-menu {
         width: 100%;
-        margin: 10px;
+        position: static;
+        margin: 50px 10px 0 10px;
     }
 
     nav#mobile-menu a {
@@ -246,11 +317,13 @@ img#ha-logo {
     /* Header Styles */
 
     header {
-        padding-top: 150px;
+        position: relative;
+        padding: 0;
     }
 
     div#heading-text {
         font-size: 20px !important;
+        padding: 0;
         padding: 0 30px;
     }
 
@@ -269,15 +342,21 @@ img#ha-logo {
         display: block;
     }
 
+    .center {
+        display: block;
+        width: 100%;
+        margin: auto !important;
+    }
+
     a#work-btn {
         font-size: 16px;
-        width: 250px;
+        width: 220px;
         padding: 15px 5px;
     }
 
     a#resume-btn {
         font-size: 16px;
-        width: 150px;
+        width: 130px;
         padding: 12px 5px;
         border: 3px solid #FFFFFF;
         margin-left: 5px;
@@ -304,12 +383,29 @@ img#ha-logo {
         margin: 10px 0;
     }
 
+    div.mleft-30 {
+        margin-left: 0;
+    }
+
+    div.card {
+        display: block;
+        margin: 30px auto;
+    }
+    
+    div.card a {
+        text-decoration: none;
+    }
+    
+    div.card-container h3 {
+        font-size: 18px;
+    }
+
     /* Footer Styles */
     p#footer-text {
         font-size: 12px;
     }
 
-    h3#thanks {
+    h2#thanks {
         font-size: 20px;
     }
 
