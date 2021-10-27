@@ -156,7 +156,9 @@ p.margin-0 {
 }
 
 p.scd-row {
-    display: inline-block; vertical-align: top; padding-left: 70px;
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 70px;
 }
 
 div.mleft-30 {
@@ -404,8 +406,8 @@ img#ha-logo {
     }
 
     p.scd-row {
-        display: inline-block;
-        padding: 0;
+        display: block;
+        padding: 20px 0 0 0 !important;
     }
 
     div.mleft-30 {
@@ -424,6 +426,10 @@ img#ha-logo {
     div.card-container h3 {
         font-size: 18px;
     }
+
+    blockquote#quote {
+        margin: 0;
+    }
   
     div#quote-container {
         padding: 0;
@@ -437,7 +443,7 @@ img#ha-logo {
     }
 
     div#quote-container p {
-        padding-left: 30px;
+        padding-left: 40px;
         line-height: 200%;
     }
 
@@ -446,9 +452,8 @@ img#ha-logo {
     }
 
     div#quote-container {
-        padding: 10px 0;
         width: 100%;
-        margin: 30px auto;
+        margin: 20px auto;
         display: block;
     }
     
@@ -482,11 +487,11 @@ img#ha-logo {
 
     section#contact i {
         font-size: 64px;
+        text-align: center;
     }
 
     div#socials {
-        margin: auto;
-        width: 60%;
+        text-align: center;
     }
 
     /* Footer Styles */
