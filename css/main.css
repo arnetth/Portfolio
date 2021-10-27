@@ -413,11 +413,11 @@ img#ha-logo {
     }
 
     div.card {
-        width: 90%;
+        width: 100%;
     }
     
     img.card-image {
-        width: 90%;
+        width: 100%;
         height: auto;
     }
     
