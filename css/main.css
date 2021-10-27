@@ -403,21 +403,42 @@ img#ha-logo {
         margin: 10px 0;
     }
 
+    p.scd-row {
+        display: inline-block;
+        padding: 0;
+    }
+
     div.mleft-30 {
         margin-left: 0;
     }
 
     div.card {
-        display: block;
-        margin: 30px auto;
+        width: 90%;
     }
     
-    div.card a {
-        text-decoration: none;
+    img.card-image {
+        width: 90%;
+        height: auto;
     }
     
     div.card-container h3 {
         font-size: 18px;
+    }
+  
+    div#quote-container {
+        padding: 0;
+        width: 100%;
+        margin: 0;
+        display: block;
+    }
+
+    i#left-quote {
+        font-size: 20px;
+    }
+
+    div#quote-container p {
+        padding-left: 30px;
+        line-height: 200%;
     }
 
     section#about p {
@@ -464,9 +485,8 @@ img#ha-logo {
     }
 
     div#socials {
-        margin: 0 auto;
-        display: block;
-        width: 50%;
+        margin: auto;
+        width: 60%;
     }
 
     /* Footer Styles */
