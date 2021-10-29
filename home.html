@@ -11,8 +11,8 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap">
 <script src="https://kit.fontawesome.com/508221f109.js" crossorigin="anonymous"></script>
 
-<link rel="stylesheet" href="css/main.css">
 <link rel="stylesheet" href="css/hamburgers.css">
+<link rel="stylesheet" href="css/main.css">
 
 <link rel="icon" href="img/ha-icon.png">
 
@@ -21,32 +21,36 @@
   <div id="black-container">
 
     <!-- Nav Container -->
-    <div id="navbar" class="w3-bar">
-      <a href="home.html" alt="link to home"><h1 id="ha" class="w3-bar-item w3-animate-opacity">Hannah Arnett</h1></a>
+    <div id="nav-holder">
+      <div id="navbar" class="w3-bar">
+        <a href="home.html" alt="link to home"><h1 id="ha" class="w3-bar-item w3-animate-opacity">Hannah Arnett</h1></a>
 
-      <!-- Mobile Menu -->
-      <button id="icon" alt="button to open mobile menu" class="hamburger hamburger--squeeze w3-bar-item content w3-animate-opacity w3-hide-large" type="button" onclick="openMenu()">
-        <span class="hamburger-box">
-          <span class="hamburger-inner"></span>
-        </span>
-      </button>
+        <!-- Desktop Menu -->
+        <nav id="desktop-menu" class="w3-hide-medium w3-hide-small">
+          <a href="home.html#work" class="w3-bar-item w3-animate-opacity">work</a>
+          <a href="home.html#about" class="w3-bar-item w3-animate-opacity w3-hide-medium">about</a>
+          <a href="home.html#contact" class="w3-bar-item w3-animate-opacity">contact</a>
+        </nav>
 
-      <nav id="mobile-menu" class="w3-bar-block w3-hide w3-hide-large">
-        <a href="home.html#work" class="w3-bar-item w3-mobile" onclick="closeMenu()">work</a>
-        <hr>
-        <a href="home.html#about" class="w3-bar-item w3-mobile" onclick="closeMenu()">about</a>
-        <hr>
-        <a href="home.html#contact" class="w3-bar-item w3-mobile" onclick="closeMenu()">contact</a>
-      </nav>
+        <!-- Mobile Menu Button -->
+        <button id="icon" alt="button to open mobile menu" class="hamburger hamburger--squeeze w3-bar-item content w3-animate-opacity w3-hide-large" type="button" onclick="openMenu()">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
 
-      <!-- Desktop Menu -->
-      <nav id="desktop-menu">
-        <a href="home.html#work" class="w3-bar-item w3-hide-small w3-animate-opacity w3-hide-medium">work</a>
-        <a href="home.html#about" class="w3-bar-item w3-hide-small w3-animate-opacity w3-hide-medium">about</a>
-        <a href="home.html#contact" class="w3-bar-item w3-hide-small w3-animate-opacity w3-hide-medium">contact</a>
-      </nav>
-
+        
+      </div>
     </div>
+    <!-- Mobile Menu Dropdown -->
+    <nav id="mobile-menu" class="w3-bar-block w3-hide w3-hide-large">
+      <a href="home.html#work" class="w3-bar-item w3-mobile" onclick="closeMenu()">work</a>
+      <hr>
+      <a href="home.html#about" class="w3-bar-item w3-mobile" onclick="closeMenu()">about</a>
+      <hr>
+      <a href="home.html#contact" class="w3-bar-item w3-mobile" onclick="closeMenu()">contact</a>
+    </nav>
+  
     <!-- END Nav Container -->
 
     <!-- Heading Container -->

@@ -17,8 +17,13 @@ div#black-container {
 
 /* Nav Styling */
 
+div#nav-holder {
+    height: 100px;
+}
+
 div#navbar {
     width: 100%;
+    height: 100px;
     padding: 50px 0 10px 100px;
     overflow: hidden;
     transition: 0.3s;
@@ -302,8 +307,14 @@ img#ha-logo {
 @media screen and (max-width: 600px) {
 
     /* Nav Styling */
+    div#nav-holder {
+        height: 100px;
+    }
+
     div#navbar {
         padding: 50px 30px;
+        position: static;
+        height: 100px;
         z-index: 100;
         background-color: #000000;
     }
@@ -318,17 +329,21 @@ img#ha-logo {
     }
 
     nav#mobile-menu {
-        width: 100%;
         position: static;
-        margin: 50px 10px 0 10px;
+        background-color: #000000;
+        transition: .1s;
+        padding: 10px 30px;
+        width: 100%;
+        height: auto;
     }
 
     nav#mobile-menu a {
         text-align: center;
-        padding: 5px 0;
+        padding: 7px 0;
         font-size: 16px;
-        width: 100%;
+        text-decoration: none;
         display: inline-block;
+        transition: .3s;
     }
 
     hr {
@@ -366,19 +381,19 @@ img#ha-logo {
 
     .center {
         display: block;
-        width: 100%;
-        margin: auto !important;
+        margin: auto;
+        text-align: center;
     }
 
     a#work-btn {
         font-size: 16px;
-        width: 220px;
+        width: 170px;
         padding: 15px 5px;
     }
 
     a#resume-btn {
         font-size: 16px;
-        width: 130px;
+        width: 120px;
         padding: 12px 5px;
         border: 3px solid #FFFFFF;
         margin-left: 5px;
@@ -388,6 +403,10 @@ img#ha-logo {
     div#container {
         padding: 20px 30px;
     }
+
+    h2 {
+        font-size: 20px;
+    }    
 
     section#summary-icons {
         margin: 20px 0;
@@ -434,6 +453,7 @@ img#ha-logo {
     div#quote-container {
         padding: 0;
         width: 100%;
+        height: auto;
         margin: 0;
         display: block;
     }
@@ -442,13 +462,13 @@ img#ha-logo {
         font-size: 20px;
     }
 
-    div#quote-container p {
-        padding-left: 40px;
-        line-height: 200%;
-    }
-
     section#about p {
         line-height: 150%;
+    }
+
+    div#quote-container p {
+        padding-left: 35px;
+        line-height: 200%;
     }
 
     div#quote-container {
