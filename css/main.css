@@ -135,12 +135,18 @@ div.container {
 }
 
 section#summary-icons {
-    margin: 0 50px 50px 0;
+    margin: 20px auto;
+    display: block;
     text-align: center;
 }
 
+div.icon-col {
+    width: 400px;
+    padding: 0 30px;
+}
+
 section#summary-icons p {
-    margin: 0 50px;
+    margin: 0;
     text-align: center;
     font-size: 18px;
     font-family: Poppins, Arial, sans-serif;
@@ -149,7 +155,7 @@ section#summary-icons p {
 section#summary-icons i {
     font-size: 72px;
     color: #444440;
-    margin: 10px 0;
+    margin-bottom: 30px;
 }
 
 p.line-height-180 {
@@ -300,6 +306,191 @@ img#ha-logo {
     margin: 0 auto;
     display: block;
     padding-top: 50px;
+}
+
+/* **********Tablet Styling ********** */
+
+@media screen and (min-width: 601px) and (max-width: 1000px) {
+
+    /* Nav Styling */
+    div#nav-holder {
+        height: 100px;
+    }
+
+    div#navbar {
+        padding: 40px 60px;
+        position: static;
+        height: 100px;
+        z-index: 100;
+        background-color: #000000;
+    }
+
+    h1#ha {
+        font-size: 26px;
+        margin: 0 !important;
+    }
+
+    button#icon {
+        float: right;
+        padding: 0;
+    }
+
+    nav#mobile-menu {
+        position: static;
+        background-color: #000000;
+        transition: .1s;
+        padding: 10px 60px;
+        width: 100%;
+        height: auto;
+        z-index: 1000;
+    }
+
+    nav#mobile-menu a {
+        text-align: center;
+        padding: 10px 0;
+        font-size: 16px;
+        text-decoration: none;
+        transition: .3s;
+    }
+
+    hr {
+        margin: 7px 0 !important;
+        opacity: 0.5;
+    }
+    
+    /* Hero Styling */
+    header {
+        position: static;
+        padding-left: 60px;
+    }
+    
+    div#heading-text {
+        font-size: 22px !important;
+        padding-right: 0;
+    }
+    
+    p#my-style {
+        margin-bottom: 20px;
+    }
+    
+    a#work-btn {
+        width: 180px;
+        padding: 15px 20px;
+    }
+    
+    a#resume-btn {
+        width: 130px;
+        height: auto;
+        padding: 10px 20px;
+        margin-left: 5px;
+    }
+    
+    div#hero-image {
+        padding-left: 50px;
+    }
+    
+    img#sunflower {
+        max-width: 320px;
+    }
+    
+    /* Body Content Styling */
+    div#container {
+        padding: 20px 60px;
+    }
+    
+    h2 {
+        font-size: 20px;
+    }
+    
+    div.container {
+        margin: 20px 0;
+    }
+
+    section#summary-icons {
+        margin: 0 auto;
+        display: block;
+    }
+
+    div.icon-col {
+        width: 200px;
+        padding: 0 20px;
+    }
+    
+    section#summary-icons p {
+        margin: 0;
+    }
+    
+    section#summary-icons i {
+        font-size: 48px;
+        margin-bottom: 20px;
+    }
+
+    div#tools-col {
+        padding-left: 30px;
+    }
+    
+    p.scd-row {
+        padding-left: 0;
+    }
+    
+    div.mleft-30 {
+        margin-left: 30px;
+    }
+    
+    div.card {
+        width: 280px;
+    }
+    
+    div.card-container h3 {
+        font-size: 18px;
+    }
+
+    .card-container {
+        padding: 0 7px;
+    }
+
+    div#cultures {
+        margin-left: 0 !important;
+    }
+    
+    img#img-professional {
+        width: 200px;
+    }
+
+    div#about-text {
+        padding-left: 60px;
+    }
+    
+    a#resume-btn-full {
+        margin: 20px 0 10px 0;
+        padding: 15px 20px;
+        width: 200px;
+    }
+
+    section#about p {
+        line-height: 150%;
+    }
+    
+    div#quote-container {
+        width: 100%;
+    }
+    
+    i#left-quote {
+        font-size: 22px;
+    }
+
+    div.col-spacing {
+        width: 200px !important;
+    }
+
+    /* Footer Styling */
+    footer {
+        padding-top: 30px;
+    }
+    
+    img#ha-logo {
+        padding-top: 30px;
+    }
 }
 
 /* **********Mobile Styling ********** */
