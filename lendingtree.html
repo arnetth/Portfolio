@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<title>Hannah Arnett</title>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tenor+Sans|Poppins|Raleway">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap">
+<script src="https://kit.fontawesome.com/508221f109.js" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" href="css/hamburgers.css">
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/lendingtree.css">
+
+<link rel="icon" href="img/ha-icon.png">
+
+<body>
+
+  <div id="black-container">
+
+    <!-- Nav Container -->
+    <div id="nav-holder">
+      <div id="navbar" class="w3-bar">
+        <a href="home.html" alt="link to home"><h1 id="ha" class="w3-bar-item w3-animate-opacity">Hannah Arnett</h1></a>
+
+        <!-- Desktop Menu -->
+        <nav id="desktop-menu" class="w3-hide-medium w3-hide-small">
+          <a href="home.html#work" class="w3-bar-item w3-animate-opacity">work</a>
+          <a href="home.html#about" class="w3-bar-item w3-animate-opacity">about</a>
+          <a href="home.html#contact" class="w3-bar-item w3-animate-opacity">contact</a>
+        </nav>
+
+        <!-- Mobile Menu Button -->
+        <button id="icon" alt="button to open mobile menu" class="hamburger hamburger--squeeze w3-bar-item content w3-animate-opacity w3-hide-large" type="button" onclick="openMenu()">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
+
+        
+      </div>
+    </div>
+    <!-- Mobile Menu Dropdown -->
+    <nav id="mobile-menu" class="w3-bar-block w3-hide w3-hide-large">
+      <a href="home.html#work" class="w3-bar-item w3-mobile" onclick="closeMenu()">work</a>
+      <hr>
+      <a href="home.html#about" class="w3-bar-item w3-mobile" onclick="closeMenu()">about</a>
+      <hr>
+      <a href="home.html#contact" class="w3-bar-item w3-mobile" onclick="closeMenu()">contact</a>
+    </nav>
+  
+    <!-- END Nav Container -->
+
+    <!-- Heading Container -->
+    <header>
+      <div class="w3-cell-row">
+        <div class="w3-container w3-cell w3-mobile w3-animate-top w3-cell-middle" id="heading-text">
+          <p style="font-weight: bold;">I converted designs into<br>fully functional emails.</p>
+          <p id="responsive">Responsive, dynamic,<br>browser-compatible, fast</p>
+        </div>
+        
+        <div class="w3-cell w3-mobile w3-animate-right" id="hero-image">
+          <img src="img/phones.png" id="phones" alt="LendingTree emails displayed on cellphone screens" />
+        </div>
+      </div>
+    </header>
+    <!-- END Heading Container -->
+
+    <!-- END Black Container -->
+  </div>
+
+  <div id="container">
+
+    <!-- Body Container -->
+    <section id="summary-icons">
+        <div class="container w3-center">
+            <img src="img/LT-Logo-Gradient.png" id="LT-logo" alt="LendingTree logo" />
+            <h3>Email Developer Intern at LendingTree</h3>
+            <p>May &dash; August 2021</p>
+        </div>
+    </section>
+
+    <div class="tab">
+        <button class="tablinks" onclick="openTab(event, 'Overview')" id="defaultOpen">Overview</button>
+        <button class="tablinks" onclick="openTab(event, 'Projects')">Projects</button>
+        <button class="tablinks" onclick="openTab(event, 'Accomplishments')">Accomplishments</button>
+        <button class="tablinks" onclick="openTab(event, 'Contributions')">Contributions</button>
+    </div>
+
+    <div id="Overview" class="tabcontent">
+        <p><strong>As an email developer intern at LendingTree, I worked directly with the creative, marketing, and technical teams to produce fully-functioning, customer-facing emails that covered all the brands, products, and resources that the company has to offer.</strong></p>
+        <p>London is the capital city of England.</p>
+    </div>
+
+    <div id="Projects" class="tabcontent">
+        <h3>Paris</h3>
+        <p>Paris is the capital of France.</p>
+    </div>
+
+    <div id="Accomplishments" class="tabcontent">
+        <h3>Tokyo</h3>
+        <p>Tokyo is the capital of Japan.</p>
+    </div>
+
+    <div id="Contributions" class="tabcontent">
+        <h3>Tokyo</h3>
+        <p>Tokyo is the capital of Japan.</p>
+    </div>
+    <!-- END Body Container -->
+
+    <!-- Footer Container -->
+    <footer>
+      <a href="home.html#black-container" id="jump-top" alt="jump to top of page">back to top</a>
+      <h2 id="thanks">Thanks for checking me out!</h2>
+
+      <a href="home.html"><img src="img/ha-logo.png" alt="Hannah Arnett's logo" id="ha-logo" /></a>
+      <p id="footer-text" style="text-align: center;">designed and developed by Hannah Arnett, 2021</p>
+    </footer>
+    <!-- END Footer Container -->
+
+  <!-- END Container -->
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
