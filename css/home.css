@@ -442,7 +442,7 @@ section#contact i:hover {
     }
     
     section#summary-icons p {
-        margin: 5px 30px 30px 30px;
+        margin: 5px 30px 5px 30px;
         text-align: center;
         font-size: 18px;
     }
@@ -459,6 +459,11 @@ section#contact i:hover {
 
     div.mleft-30 {
         margin-left: 0;
+    }
+
+    
+    p.arrow-link {
+        padding-bottom: 30px;
     }
 
     div.card {

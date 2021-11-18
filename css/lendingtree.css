@@ -39,6 +39,10 @@ h2 {
     color: #444440;
 }
 
+h3 {
+    font-family: Poppins, Arial, sans-serif;
+}
+
 div.container {
     margin: 30px 0;
 }
@@ -67,11 +71,11 @@ img#LT-logo {
 }
   
 .tab button:hover {
-    background-color: #ddd;
+    background-color: #DDDDDD;
 }
   
-.tab button.active {
-    background-color: #ccc;
+.tab button.activeTab {
+    background-color: #CCCCCC;
 }
   
 .tabcontent {
@@ -87,12 +91,7 @@ img#LT-logo {
   }
 
 div#images {
-    margin: auto;
     text-align: center;
-}
-
-img#desktop, img#darkmode, img#mobile {
-    display: inline-block;
 }
 
 img#desktop, img#darkmode {
@@ -126,7 +125,7 @@ div#Projects h3 a:hover {
 }
 
 img#eg-template {
-    width: 300px;
+    width: 50%;
     height: auto;
     margin: 20px auto;
     display: block;
@@ -144,11 +143,58 @@ div#Accomplishments p {
 }
 
 .scd-row {
-    padding-left: 200px;
+    padding-left: 30px;
+}
+
+.inline {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.margin-0 {
+    margin: 0 !important;
 }
 
 .indent {
     list-style-type: none;
+}
+
+.accordion {
+    content: 'Read More...';
+    background-color: #eee;
+    color: #444440;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.3s ease;
+}
+  
+.activeAcc, .accordion:hover {
+    background-color: #CCCCCC;
+}
+  
+.panel {
+    padding: 0 30px;
+    background-color: #FFFFFF;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+
+.accordion:after {
+    content: '\002B';
+    color: #444440;
+    font-weight: bold;
+    font-size: 20px;
+    float: right;
+    margin-left: 5px;
+}
+  
+.activeAcc:after {
+    content: "\2212";
 }
 
 /* **********Tablet Styling ********** */
@@ -170,24 +216,13 @@ div#Accomplishments p {
         margin-bottom: 20px;
     }
     
-    a#work-btn {
-        width: 180px;
-        padding: 15px 20px;
-    }
-    
-    a#resume-btn {
-        width: 130px;
-        height: auto;
-        padding: 10px 20px;
-        margin-left: 5px;
-    }
-    
     div#hero-image {
-        padding-left: 50px;
+        padding-left: 10px;
     }
     
-    img#sunflower {
-        max-width: 320px;
+    img#phones {
+        max-width: 300px;
+        height: auto;
     }
     
     /* Body Content Styling */
@@ -198,86 +233,58 @@ div#Accomplishments p {
     h2 {
         font-size: 20px;
     }
+
+    h3 {
+        font-size: 18px;
+    }
     
     div.container {
         margin: 20px 0;
     }
 
-    section#summary-icons {
-        margin: 0 auto;
-        display: block;
+    img#LT-logo {
+        width: 150px;
+        margin-bottom: 0;
+    }
+      
+    .tab button {
+        padding: 10px 20px;
     }
 
-    div.icon-col {
-        width: 200px;
-        padding: 0 20px;
-    }
-    
-    section#summary-icons p {
-        margin: 0;
-    }
-    
-    section#summary-icons i {
-        font-size: 48px;
-        margin-bottom: 20px;
-    }
-
-    div#tools-col {
-        padding-left: 30px;
-    }
-    
-    p.scd-row {
-        padding-left: 0;
-    }
-    
-    div.mleft-30 {
-        margin-left: 30px;
-    }
-    
-    div.card {
-        width: 280px;
-    }
-    
-    div.card-container h3 {
-        font-size: 18px;
-    }
-
-    .card-container {
-        padding: 0 7px;
-    }
-
-    div#cultures {
-        margin-left: 0 !important;
-    }
-    
-    img#img-professional {
+    img#desktop, img#darkmode {
         width: 200px;
     }
-
-    div#about-text {
-        padding-left: 60px;
-    }
     
-    a#resume-btn-full {
-        margin: 20px 0 10px 0;
-        padding: 15px 20px;
-        width: 200px;
+    img#mobile {
+        width: 160px;
     }
 
-    section#about p {
-        line-height: 150%;
+    section#links {
+        margin-bottom: 50px;
     }
     
-    div#quote-container {
+    img#eg-template {
         width: 100%;
     }
     
-    i#left-quote {
-        font-size: 22px;
+    .scd-row {
+        padding-left: 0;
     }
-
-    div.col-spacing {
-        width: 200px !important;
+    
+    .inline {
+        display: block;
+    }
+    
+    .accordion {
+        padding: 14px;
+    }
+      
+    .panel {
+        padding: 0 20px;
+    }
+    
+    .accordion:after {
+        margin-right: 20px;
     }
 }
 
@@ -347,11 +354,26 @@ div#Accomplishments p {
         animation: fadeEffect .3s;
     }
 
+    .panel {
+        padding: 0 12px;
+    }
+    
     .scd-row {
         padding: 0;
     }
 
+    .inline {
+        display: block;
+    }
+
     .indent {
         line-height: 250%;        
+    }
+
+    img#eg-template {
+        width: 100%;
+        height: auto;
+        margin: 20px 0;
+        display: block;
     }
 }
