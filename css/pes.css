@@ -4,6 +4,7 @@
 header {
     position: static;
     padding-left: 100px;
+    margin-top: 50px;
 }
 
 div#heading-text {
@@ -12,17 +13,18 @@ div#heading-text {
     padding: 0;
 }
 
-p#responsive {
+p#strategic {
     margin-bottom: 50px;
     font-weight: 300;
 }
 
 div#hero-image {
     padding-left: 100px;
+    padding-right: 50px;
 }
 
-img#phones {
-    max-width: 500px;
+img#car {
+    max-width: 800px;
     height: auto;
 }
 
@@ -39,97 +41,27 @@ h2 {
     color: #444440;
 }
 
+h3 {
+    font-family: Poppins, Arial, sans-serif;
+    font-size: 18px;
+}
+
 div.container {
     margin: 30px 0;
 }
 
-img#LT-logo {
-    width: 250px;
+img#PES-logo {
+    width: 100px;
     height: auto;
     margin-bottom: 30px;
 }
 
-.tab {
-    overflow: hidden;
-    background-color: #EBEBEB;
-    border-bottom: 1px solid #C4C4C4;
-    font-size: 18px;
-}
-  
-.tab button {
-    float: left;
-    background-color: inherit;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 15px 40px;
-    transition: 0.3s;
-}
-  
-.tab button:hover {
-    background-color: #ddd;
-}
-  
-.tab button.active {
-    background-color: #ccc;
-}
-  
-.tabcontent {
-    display: none;
-    padding: 15px 0;
-    border-top: none;
-    animation: fadeEffect .3s;
-}
-
-@keyframes fadeEffect {
-    from {opacity: 0;}
-    to {opacity: 1;}
-  }
-
-div#images {
-    margin: auto;
-    text-align: center;
-}
-
-img#desktop, img#darkmode, img#mobile {
-    display: inline-block;
-}
-
-img#desktop, img#darkmode {
-    width: 250px;
-    height: auto;
-}
-
-img#mobile {
-    width: 210px;
-    height: auto;
-}
-
-section#links {
-    margin-bottom: 60px;
-}
-
-div#Projects h3 {
-    margin-bottom: 20px;
-    font-size: 20px;
-    color: #444440;
-    letter-spacing: 2.5%;
-}
-
-div#Projects h3 a {
+a#pes-link {
     text-decoration: none;
 }
 
-div#Projects h3 a:hover {
-    color: #929292;
-    transition: .3s ease;
-}
-
-img#eg-template {
-    width: 300px;
-    height: auto;
-    margin: 20px auto;
-    display: block;
+a#pes-link:hover {
+    color: #
 }
 
 h4 {
@@ -139,8 +71,20 @@ h4 {
     letter-spacing: 1.2%;
 }
 
-div#Accomplishments p {
-    line-height: 180%;
+.scd-row {
+    padding-left: 30px;
+}
+
+.inline {
+    display: inline-block;
+    vertical-align: top;
+}
+
+img#pes-home {
+    width: 400px;
+    height: auto;
+    margin: 20px auto;
+    display: block;
 }
 
 /* **********Tablet Styling ********** */
