@@ -12,7 +12,7 @@ div#heading-text {
     padding: 0;
 }
 
-p#responsive {
+p#learning {
     margin-bottom: 50px;
     font-weight: 300;
 }
@@ -37,6 +37,11 @@ h2 {
     font-family: 'Tenor Sans', Arial, sans-serif;
     font-size: 24px;
     color: #444440;
+}
+
+h3 {
+    font-family: Poppins, Arial, sans-serif;
+    font-size: 18px;
 }
 
 div.container {
@@ -86,52 +91,6 @@ img#PU-logo {
     to {opacity: 1;}
   }
 
-div#images {
-    margin: auto;
-    text-align: center;
-}
-
-img#desktop, img#darkmode, img#mobile {
-    display: inline-block;
-}
-
-img#desktop, img#darkmode {
-    width: 250px;
-    height: auto;
-}
-
-img#mobile {
-    width: 210px;
-    height: auto;
-}
-
-section#links {
-    margin-bottom: 60px;
-}
-
-div#Projects h3 {
-    margin-bottom: 20px;
-    font-size: 20px;
-    color: #444440;
-    letter-spacing: 2.5%;
-}
-
-div#Projects h3 a {
-    text-decoration: none;
-}
-
-div#Projects h3 a:hover {
-    color: #929292;
-    transition: .3s ease;
-}
-
-img#eg-template {
-    width: 300px;
-    height: auto;
-    margin: 20px auto;
-    display: block;
-}
-
 h4 {
     color: #444440;
     font-size: 18px;
@@ -139,8 +98,41 @@ h4 {
     letter-spacing: 1.2%;
 }
 
-div#Accomplishments p {
-    line-height: 180%;
+.scd-row {
+    padding-left: 30px;
+}
+
+.inline {
+    display: inline-block;
+    vertical-align: top;
+}
+
+div#quote-container {
+    padding: 10px 20px 10px 10px;
+    width: 70%;
+    margin: 30px auto;
+    display: block;
+}
+
+i#left-quote {
+    float: left;
+    color: #444440;
+    font-size: 24px;
+}
+
+div#quote-container p {
+    padding-left: 40px;
+    line-height: 200%;
+}
+
+section#contact p {
+    line-height: 200%;
+}
+
+div#images img {
+    width: 350px;
+    margin: 30px 0;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
 /* **********Tablet Styling ********** */
@@ -158,27 +150,15 @@ div#Accomplishments p {
         padding-right: 0;
     }
     
-    p#my-style {
+    p#learning {
         margin-bottom: 20px;
-    }
-    
-    a#work-btn {
-        width: 180px;
-        padding: 15px 20px;
-    }
-    
-    a#resume-btn {
-        width: 130px;
-        height: auto;
-        padding: 10px 20px;
-        margin-left: 5px;
     }
     
     div#hero-image {
         padding-left: 50px;
     }
     
-    img#sunflower {
+    img#screens {
         max-width: 320px;
     }
     
@@ -195,69 +175,12 @@ div#Accomplishments p {
         margin: 20px 0;
     }
 
-    section#summary-icons {
-        margin: 0 auto;
-        display: block;
-    }
-
-    div.icon-col {
-        width: 200px;
-        padding: 0 20px;
-    }
-    
-    section#summary-icons p {
-        margin: 0;
-    }
-    
-    section#summary-icons i {
-        font-size: 48px;
-        margin-bottom: 20px;
-    }
-
-    div#tools-col {
-        padding-left: 30px;
-    }
-    
-    p.scd-row {
+    .scd-row {
         padding-left: 0;
     }
     
-    div.mleft-30 {
-        margin-left: 30px;
-    }
-    
-    div.card {
-        width: 280px;
-    }
-    
-    div.card-container h3 {
-        font-size: 18px;
-    }
-
-    .card-container {
-        padding: 0 7px;
-    }
-
-    div#cultures {
-        margin-left: 0 !important;
-    }
-    
-    img#img-professional {
-        width: 200px;
-    }
-
-    div#about-text {
-        padding-left: 60px;
-    }
-    
-    a#resume-btn-full {
-        margin: 20px 0 10px 0;
-        padding: 15px 20px;
-        width: 200px;
-    }
-
-    section#about p {
-        line-height: 150%;
+    .inline {
+        display: block;
     }
     
     div#quote-container {
@@ -268,8 +191,8 @@ div#Accomplishments p {
         font-size: 22px;
     }
 
-    div.col-spacing {
-        width: 200px !important;
+    div#images img {
+        width: 100%;
     }
 }
 
@@ -290,7 +213,7 @@ div#Accomplishments p {
         padding: 0 30px;
     }
 
-    p#my-style {
+    p#learning {
         margin-bottom: 30px;
     }
 
@@ -299,30 +222,10 @@ div#Accomplishments p {
         z-index: 90;
     }
     
-    img#sunflower {
+    img#screens {
         max-width: 100%;
         margin: 0 auto;
         display: block;
-    }
-
-    .center {
-        display: block;
-        margin: auto;
-        text-align: center;
-    }
-
-    a#work-btn {
-        font-size: 16px;
-        width: 170px;
-        padding: 15px 5px;
-    }
-
-    a#resume-btn {
-        font-size: 16px;
-        width: 120px;
-        padding: 12px 5px;
-        border: 3px solid #FFFFFF;
-        margin-left: 5px;
     }
 
     /* Body Styles */
@@ -334,42 +237,17 @@ div#Accomplishments p {
         font-size: 20px;
     }    
 
-    section#summary-icons {
-        margin: 20px 0;
-        text-align: center;
-    }
-    
-    section#summary-icons p {
-        margin: 5px 30px 30px 30px;
-        text-align: center;
-        font-size: 18px;
-    }
-    
-    section#summary-icons i {
-        font-size: 48px;
-        margin: 10px 0;
+    .tab button {
+        border-bottom: 1px solid #C4C4C4;
+        width: 100%;
+        cursor: pointer;
+        padding: 15px 40px;
+        transition: 0.3s;
     }
 
     p.scd-row {
         display: block;
         padding: 20px 0 0 0 !important;
-    }
-
-    div.mleft-30 {
-        margin-left: 0;
-    }
-
-    div.card {
-        width: 100%;
-    }
-    
-    img.card-image {
-        width: 100%;
-        height: auto;
-    }
-    
-    div.card-container h3 {
-        font-size: 18px;
     }
 
     blockquote#quote {
@@ -384,14 +262,6 @@ div#Accomplishments p {
         display: block;
     }
 
-    i#left-quote {
-        font-size: 20px;
-    }
-
-    section#about p {
-        line-height: 150%;
-    }
-
     div#quote-container p {
         padding-left: 35px;
         line-height: 200%;
@@ -403,40 +273,7 @@ div#Accomplishments p {
         display: block;
     }
     
-    i#left-quote {
-        font-size: 22px;
-    }
-
-    img#img-professional-mobile {
-        width: 200px;
-        height: auto;
-        display: block;
-        margin: 0 auto;
-    }
-
-    a#resume-btn-full-mobile {
-        display: block;
-        background-color: #004AAD;
-        color: #FFFFFF;
-        text-decoration: none;
-        padding: 15px 30px;
-        text-align: center;
-        width: 230px;
-        height: auto;
-        margin: 20px auto;
-    }
-    
-    a#resume-btn-full-mobile:hover {
-        background-color: #07336d;
-        transition: .3s ease;
-    }
-
-    section#contact i {
-        font-size: 64px;
-        text-align: center;
-    }
-
-    div#socials {
-        text-align: center;
+    div#images img {
+        width: 100%;
     }
 }

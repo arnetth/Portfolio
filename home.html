@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <title>Hannah Arnett</title>
 
@@ -7,7 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tenor+Sans|Poppins|Raleway">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tenor+Sans">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap">
 <script src="https://kit.fontawesome.com/508221f109.js" crossorigin="anonymous"></script>
 
@@ -24,7 +26,7 @@
     <!-- Nav Container -->
     <div id="nav-holder">
       <div id="navbar" class="w3-bar">
-        <a href="home.html" alt="link to home"><h1 id="ha" class="w3-bar-item w3-animate-opacity">Hannah Arnett</h1></a>
+        <a href="home.html"><h1 id="ha" class="w3-bar-item w3-animate-opacity">Hannah Arnett</h1></a>
 
         <!-- Desktop Menu -->
         <nav id="desktop-menu" class="w3-hide-medium w3-hide-small">
@@ -34,7 +36,7 @@
         </nav>
 
         <!-- Mobile Menu Button -->
-        <button id="icon" alt="button to open mobile menu" class="hamburger hamburger--squeeze w3-bar-item content w3-animate-opacity w3-hide-large" type="button" onclick="openMenu()">
+        <button id="icon" class="hamburger hamburger--squeeze w3-bar-item content w3-animate-opacity w3-hide-large" type="button" onclick="openMenu()">
           <span class="hamburger-box">
             <span class="hamburger-inner"></span>
           </span>
@@ -61,8 +63,8 @@
           <p style="font-weight: bold;">Hey, I'm Hannah.<br>I'm a front-end developer with a vision for&nbsp;digital&nbsp;marketing.</p>
           <p id="my-style">My style is minimalistic, with a spoonful of&nbsp;compassion.</p>
           <div class="center">
-            <a href="home.html#work" id="work-btn" alt="button to jump to work experiences">see my work</a>
-            <a href="Hannah-Arnett-Resume.pdf" id="resume-btn" target="_blank" alt="button to open resume">resume</a>
+            <a href="home.html#work" id="work-btn">see my work</a>
+            <a href="Hannah-Arnett-Resume.pdf" id="resume-btn" target="_blank">resume</a>
           </div>
         </div>
         
@@ -85,38 +87,46 @@
       <div class="w3-cell-row container">
         <div class="w3-cell w3-mobile icon-col">
           <i class="fas fa-graduation-cap"></i>
-          <p>Graduating from Purdue University with B.S. in <strong>May 2022</strong></p>
+          <h3>Graduating from Purdue University with B.S. in <strong>May 2022</strong></h3>
           <p class="arrow-link"><a href="#about">Learn more about me ></a></p>
         </div>
         <div class="w3-cell w3-mobile icon-col">
           <i class="fas fa-user-tie"></i>
-          <p>Looking for full-time positions<br>(willing to relocate)</p>
+          <h3>Looking for full-time positions<br>(willing to relocate)</h3>
           <p class="arrow-link"><a href="#contact">Get in contact ></a></p>
         </div>
         <div class="w3-cell w3-mobile icon-col">
           <i class="fas fa-laptop-code"></i>
-          <p>Experience in front-end development, UX design, and entrepreneurship</p>
+          <h3>Experience in front-end development, UX design, and entrepreneurship</h3>
           <p class="arrow-link"><a href="#work">See my work ></a></p>
         </div>
       </div>
     </section>
 
     <section id="skills">
-      <h2>Skills &amp; Tools</h2>
-      <hr>
       <div class="container">
-        <div class="w3-cell-row">
-          <div id="skills-col" class="w3-cell w3-mobile">
-            <p><strong>Skills</strong></p>
+        <div class="w3-cell-row w3-center">
+          <div class="w3-cell w3-mobile">
+            <p style="color: #004AAD; font-size: 18px;"><strong><i class="fas fa-code"></i>&nbsp;&nbsp;Languages</strong></p>
             <p style="display: inline-block;" class="line-height-180 margin-0">HTML/CSS<br>JavaScript<br>PHP<br>Python<br>C# with ASP.NET</p>
-            <p class="line-height-180 margin-0 scd-row">User Experience Design<br>Product Design<br>Entrepreneurship<br>Marketing/Advertising<br>3D Modeling/VFX</p>
           </div>
-          <div id="tools-col" class="w3-cell w3-mobile">
-            <p><strong>Tools</strong></p>
-            <p style="display: inline-block;" class="line-height-180 margin-0">Adobe Creative Suite<br>Figma<br>Zeplin<br>Visual Studio Code<br>Maya/Houdini</p>
-            <p class="line-height-180 margin-0 scd-row">Blueshift<br>Amazon Web Services<br>Jira</p>
+
+          <div class="w3-cell w3-mobile">
+            <p style="color: #004AAD; font-size: 18px;"><strong><i class="fas fa-pencil-ruler"></i>&nbsp;&nbsp;Skills</strong></p>
+            <p class="line-height-180 margin-0">User Experience Design<br>Product Design<br>Entrepreneurship<br>Marketing/Advertising<br>3D Modeling/VFX</p>
+          </div>
+            
+          <div class="w3-cell w3-mobile">
+            <p style="color: #004AAD; font-size: 18px;"><strong><i class="fas fa-palette"></i>&nbsp;&nbsp;Design Tools</strong></p>
+            <p style="display: inline-block;" class="line-height-180 margin-0">Adobe Creative Suite<br>Figma<br>Zeplin</p>
+          </div>
+
+          <div class="w3-cell w3-mobile">
+            <p style="color: #004AAD; font-size: 18px;"><strong><i class="fas fa-wrench"></i>&nbsp;&nbsp;Developer Tools</strong></p>
+            <p class="line-height-180 margin-0">Visual Studio Code<br>Maya/Houdini<br>Blueshift<br>Amazon Web Services<br>Jira</p>
           </div>
         </div>
+
       </div>
     </section>
 
@@ -125,7 +135,7 @@
       <hr>
       <div class="container">
         <div class="card">
-          <a href="lendingtree.html" target="_self" alt="link to my LendingTree internship page">
+          <a href="lendingtree.html" target="_self">
             <img src="img/lt.png" alt="LendingTree emails displayed on cellphone screens" class="card-image" />
             <div class="card-container">
               <h3>LendingTree</h3>
@@ -135,7 +145,7 @@
         </div>
   
         <div class="card mleft-30">
-          <a href="pu.html" target="_self" alt="link to my Purdue University jobs page">
+          <a href="pu.html" target="_self">
             <img src="img/pu.png" alt="Purdue University websites displayed on Mac screens" class="card-image" />
             <div class="card-container">
               <h3>Purdue University</h3>
@@ -149,7 +159,7 @@
       <hr>
       <div class="container">
         <div class="card">
-          <a href="pes.html" target="_self" alt="link to my Power Engineering Society project page">
+          <a href="pes.html" target="_self">
           <img src="img/pes.png" alt="Power Engineering Society website displayed on laptop" class="card-image" />
             <div class="card-container">
               <h3>Power Engineering Society</h3>
@@ -159,7 +169,7 @@
         </div>
   
         <div class="card mleft-30">
-          <a href="portfolio.html" target="_self" alt="link to my portfolio project page">
+          <a href="portfolio.html" target="_self">
             <img src="img/portfolio.png" alt="Purdue University websites displayed on Mac screens" class="card-image" />
             <div class="card-container">
               <h3>My Portfolio</h3>
@@ -169,7 +179,7 @@
         </div>
   
         <div id="cultures" class="card mleft-30">
-          <a href="cultures.html" target="_self" alt="link to my Intersection of Cultures project page">
+          <a href="cultures.html" target="_self">
             <img src="img/ioc.png" alt="snapshot of Intersection of Cultures Youtube video" class="card-image" />
             <div class="card-container">
               <h3>Intersection of Cultures</h3>
@@ -188,7 +198,7 @@
         <div class="w3-row">
           <div class="w3-col m3">
             <img src="img/ha-professional-transparent.png" id="img-professional" alt="Hannah's professional headshot" class="w3-hide-small" />
-            <a href="Hannah-Arnett-Resume.pdf" id="resume-btn-full" class="w3-hide-small" target="_blank" alt="button to open resume">resume</a>
+            <a href="Hannah-Arnett-Resume.pdf" id="resume-btn-full" class="w3-hide-small" target="_blank">resume</a>
           </div>
           <div id="about-text" class="w3-col m9">
             <p>I am an undergraduate senior at Purdue University majoring in Web Programming &amp; Design with a certificate in Entrepreneurship &amp; Innovation. Because I am passionate about interactive media, my skillset extends beyond web development into other areas such as user experience design, marketing and advertising, and digital anthropology. My opted curriculum allows me to design and develop unique, user-friendly, and no-nonsense digital products with a consumer-focused mindset. Currently, I like to use the skills I learn in my entrepreneurship courses to help organizations identify digital marketing strategies that are critical for networking and customer acquisition and retention.</p>
@@ -196,7 +206,6 @@
             <p>Here's what I am up to:</p>
             <ul>
               <li>applying for full-time positions to start summer 2022</li>
-              <li>designing and developing this portfolio</li>
               <li>working on senior capstone project in partnership with Purdue's Division of Diversity and Inclusion</li>
               <li>working as brand director for Purdue's Power Engineering Society</li>
             </ul>
@@ -210,7 +219,7 @@
           </blockquote>
         </div>
         <img src="img/ha-professional-transparent.png" id="img-professional-mobile" alt="Hannah's professional headshot" class="w3-hide-large w3-hide-medium" />
-            <a href="Hannah-Arnett-Resume.pdf" id="resume-btn-full-mobile" class="w3-hide-large w3-hide-medium" target="_blank" alt="button to open resume">resume</a>
+            <a href="Hannah-Arnett-Resume.pdf" id="resume-btn-full-mobile" class="w3-hide-large w3-hide-medium" target="_blank">resume</a>
       </div>
     </section>
 
@@ -220,7 +229,7 @@
       <div class="container">
         <div class="w3-row">
           <div class="w3-col m2 col-spacing">
-            <p style="letter-spacing: 1.5%; font-weight: bolder;">Let's grab a coffee.</p>
+            <p style="font-weight: bolder;">Let's grab a coffee.</p>
           </div>
           <div class="w3-col m2 col-spacing">
             <p><strong>Email:</strong><br><span class="rev email"><a href="mailto:holmsted&commat;purdue&period;edu" style="text-decoration: none;">@</a></span></p>
@@ -234,10 +243,10 @@
           <div class="w3-col m4 col-spacing">
             <p><strong>Socials:</strong></p>
             <div id="socials">
-              <a href="https://www.linkedin.com/in/hannahnarnett/" alt="link to my LinkedIn profile" target="_blank"><i id="linkedin" class="fab fa-linkedin"></i></a>
-              <a href="https://www.youtube.com/channel/UCO1GlnWfp-u1ZBr_7R5oX4Q" alt="link to my YouTube channel" target="_blank"><i id="youtube" class="fab fa-youtube-square"></i></a>
-              <a href="https://github.com/arnetth" alt="link to my GitHub profile" target="_blank"><i id="github" class="fab fa-github-square"></i></a>
-              <a href="https://www.behance.net/hannaharnett" alt="link to my Behance profile" target="_blank"><i id="behance" class="fab fa-behance-square"></i></a>
+              <a href="https://www.linkedin.com/in/hannahnarnett/" target="_blank"><i id="linkedin" class="fab fa-linkedin"></i></a>
+              <a href="https://www.youtube.com/channel/UCO1GlnWfp-u1ZBr_7R5oX4Q" target="_blank"><i id="youtube" class="fab fa-youtube-square"></i></a>
+              <a href="https://github.com/arnetth" target="_blank"><i id="github" class="fab fa-github-square"></i></a>
+              <a href="https://www.behance.net/hannaharnett" target="_blank"><i id="behance" class="fab fa-behance-square"></i></a>
             </div>
           </div>
         </div>

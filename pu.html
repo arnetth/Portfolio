@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <title>Hannah Arnett</title>
 
@@ -7,7 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tenor+Sans|Poppins|Raleway">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tenor+Sans">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap">
 <script src="https://kit.fontawesome.com/508221f109.js" crossorigin="anonymous"></script>
 
@@ -24,7 +26,7 @@
     <!-- Nav Container -->
     <div id="nav-holder">
       <div id="navbar" class="w3-bar">
-        <a href="home.html" alt="link to home"><h1 id="ha" class="w3-bar-item w3-animate-opacity">Hannah Arnett</h1></a>
+        <a href="home.html"><h1 id="ha" class="w3-bar-item w3-animate-opacity">Hannah Arnett</h1></a>
 
         <!-- Desktop Menu -->
         <nav id="desktop-menu" class="w3-hide-medium w3-hide-small">
@@ -34,7 +36,7 @@
         </nav>
 
         <!-- Mobile Menu Button -->
-        <button id="icon" alt="button to open mobile menu" class="hamburger hamburger--squeeze w3-bar-item content w3-animate-opacity w3-hide-large" type="button" onclick="openMenu()">
+        <button id="icon" class="hamburger hamburger--squeeze w3-bar-item content w3-animate-opacity w3-hide-large" type="button" onclick="openMenu()">
           <span class="hamburger-box">
             <span class="hamburger-inner"></span>
           </span>
@@ -43,6 +45,7 @@
         
       </div>
     </div>
+
     <!-- Mobile Menu Dropdown -->
     <nav id="mobile-menu" class="w3-bar-block w3-hide w3-hide-large">
       <a href="home.html#work" class="w3-bar-item w3-mobile" onclick="closeMenu()">work</a>
@@ -51,7 +54,6 @@
       <hr>
       <a href="home.html#contact" class="w3-bar-item w3-mobile" onclick="closeMenu()">contact</a>
     </nav>
-  
     <!-- END Nav Container -->
 
     <!-- Heading Container -->
@@ -59,7 +61,7 @@
       <div class="w3-cell-row">
         <div class="w3-container w3-cell w3-mobile w3-animate-top w3-cell-middle" id="heading-text">
           <p style="font-weight: bold;">I design, develop, and modify web pages&nbsp;for Purdue University.</p>
-          <p id="responsive">Strategic, analytical, problem-solver</p>
+          <p id="learning">Learning, doing, problem-solving</p>
         </div>
         
         <div class="w3-cell w3-mobile w3-animate-right" id="hero-image">
@@ -81,193 +83,126 @@
         <div class="container w3-center">
             <img src="img/purdue-logo.png" id="PU-logo" alt="Purdue University logo" />
             <h3>Front-End Website Developer at Purdue University</h3>
-            <p>July 2019 &dash; Present</p>
+            <p>July/October 2019 &dash; Present</p>
         </div>
     </section>
 
     <div class="tab">
-        <button class="tablinks" onclick="openTab(event, 'Overview')" id="defaultOpen">Overview</button>
-        <button class="tablinks" onclick="openTab(event, 'Projects')">Projects</button>
-        <button class="tablinks" onclick="openTab(event, 'Accomplishments')">Accomplishments</button>
-        <button class="tablinks" onclick="openTab(event, 'Contributions')">Contributions</button>
+      <button class="tablinks" onclick="openTab(event, 'Honors')" id="defaultOpen">Honors College</button>
+      <button class="tablinks" onclick="openTab(event, 'CILMAR')">CILMAR</button>
     </div>
 
-    <div id="Overview" class="tabcontent">
-        <p><strong>Honors College</strong></p>
-        <p>I want</p>
+    <div id="Honors" class="tabcontent">
 
-        <p><strong>Center for Intercultural Learning, Mentorship, Assessment, and Research (CILMAR)</strong></p>
-        <p>I want</p>
-
-        <div id="images" class="w3-cell-row">
-            <div class="w3-cell w3-mobile">
-                <img id="desktop" src="img/promo-coca-excellent-credit-cash-travel-2021-ctl.png" alt="CompareCards email in regular desktop view" />
-                <p>Original - Desktop</p>
-            </div>
-            <div class="w3-cell w3-mobile">
-                <img id="darkmode" src="img/promo-coca-excellent-credit-cash-travel-2021-var2-darkmode.png" alt="CompareCards email in desktop dark mode view" />
-                <p>Dark Mode - Desktop</p>
-            </div>
-            <div class="w3-cell w3-mobile">
-                <img id="mobile" src="img/promo-coca-excellent-credit-cash-travel-2021-var2-mobile.png" alt="CompareCards email in mobile screens view" />
-                <p>Original - Mobile</p>
-            </div>
-        </div>
-        
-        <div class="w3-cell-row">
-            <div class="w3-cell w3-mobile">
-                <h2>Languages I Work With:</h2>
-                <hr>
-                <ul>
-                    <li>HTML/CSS</li>
-                    <li>PHP</li>
-                </ul>
-            </div>
-            <div class="w3-cell w3-mobile">
-                <h2>Tools I Use:</h2>
-                <hr>
-                <ul>
-                    <li>Visual Studio Code</li>
-                    <li>WordPress</li>
-                    <li>Cascade</li>
-                    <li>Canva</li>
-                    <li>Photoshop</li>
-                    <li>Illustrator</li>
-                </ul>
-            </div>
-        </div>
-        
-    </div>
-
-    <div id="Projects" class="tabcontent">
-      <section id="links">
-        <div class="container">
-          <strong>
-            <h3><a href="#giveaway">Gaining Email Subscribers Through Scholarship Giveaway</a></h3>
-            <h3><a href="#evergreen">Adding Value to User Email Journeys</a></h3>
-            <h3><a href="#prequal">Creating Email and Direct Mail Templates for Third-Party Vendors</a></h3>
-          </strong>
-        </div>
-      </section>
-
-      <section id="giveaway">
-        <div class="container">
-        <h2>Student Loan Hero Giveaway Emails</h2>
-        <h4>Dipping into email marketing</h4>
-        <hr>
-        <div class="w3-cell w3-mobile">
-          <p><strong>My Role</strong></p>
-          <p>researcher<br>copywriter<br>test personalized emails</p>
-        </div>
-        <div style="padding-left: 200px;" class="w3-cell w3-mobile">
-          <p><strong>Project Duration</strong></p>
-          <p>2 weeks</p>
-        </div>
-        
-        <p><strong>Situation</strong></p>
-        <p>Early on in my internship, LendingTree’s child company that the team develops emails for, Student Loan Hero, was holding a scholarship giveaway for any high school or college students who signed up using their email. The purpose of this giveaway was to increase the number of Student Loan Hero email subscribers. One of my coworkers on the email marketing side of the team ran the email campaign for this giveaway, and she reached out to me for help.</p>
-        <p><strong>Task</strong></p>
-        <p>She felt that the email subject lines and preheaders that they were using for promoting this giveaway were not were not attractive enough to grab the attention of subscribers, so she asked me to think of some creative subject lines and preheaders that we could use to freshen up this campaign.</p>
-        </div>
-        <p><strong>Action</strong></p>
-        <p>Starting off, I knew that I would need to understand what the campaign is doing already, and identify where it could improve. I looked at Student Loan Hero’s subject lines and preheaders to understand the company’s marketing appeal. I also looked at what its competitors are doing. I used companies like Niche and Fastweb to conduct some competitive research and analysis and used their emails as inspiration for my own ideas.</p>
-        <p>While brainstorming, I reflected on my own experiences receiving scholarship emails. As a tuition-paying college student, I am well versed with emails sent from companies like Student Loan Hero. Personalized subject lines tend to attract my attention more, especially if it mentions my school. Some of Student Loan Hero’s competitors did this. The giveaway campaign’s old subject lines and preheaders were not personalized, or sometimes just with the users’ first names. From this, my main objective was to create some unique, personalized subject lines and preheaders. I knew that we could use <strong>Shopify Liquid</strong> to accomplish this.</p>
-        <p>Here are a few subject lines and preheaders that I came up with:</p>
-        <div id="subject-pre">
-          <p>subject line</p>
-          <p>preheader</p>
-          <p>subject line</p>
-          <p>preheader</p>
-        </div>
-        <p>After receiving feedback from my coworker and a few others leading this giveaway campaign, we made a few edits together. The next step for me was to test the subject lines and preheaders using Blueshift and Litmus to confirm that the users' personal data were displaying properly when emails were sent. My subject lines and preheaders were then added to the mix of emails sent out to users.</p>
-        <p><strong>Results</strong></p>
-        <p>I proved to my team that I am eager to learn, and I was willing to contribute more than just my scope of work. This was also my first experience collaborating with other professionals on a project, so this experience allowed me to further develop my collaboration, communication, critical thinking, marketing, and competitor research and analysis skills.</p>
-      </section>
-
-      <section id="evergreen">
-        <div class="container">
-        <h2>Evergreen Emails</h2>
-        <h4>Designer, Developer, Copywriter</h4>
-        <hr>
-        <div class="w3-cell w3-mobile">
-          <p><strong>My Role</strong></p>
-          <p>Email designer</p>
-          <p>Email developer</p>
-          <p>Copywriter</p>
-        </div>
-        <div style="padding-left: 200px;" class="w3-cell w3-mobile">
-          <p><strong>Project Duration</strong></p>
-          <p>5-6 weeks</p>
-        </div>
-
-        <p><strong>Situation</strong></p>
-        <p>The email team wanted to create a new set of emails to be used in customer communications journeys, which would direct them to LendingTree's free online articles and resources that are relevant to the customer's financial goals. For example, if a customer uses LendingTree to apply for a loan but they are rejected, we would want to send them an email for a LendingTree article about improving their credit score. We called these "evergreen" emails. The goal of this project was to increase customer engagement and improve our customer relationship management.</p>
-
-        <p><strong>Task</strong></p>
-        <p>I spearheaded this project from start to finish. I was given a list of specific articles and resources from the marketing team to design, develop, and write copy for.</p>
-
-        <p><strong>Action</strong></p>
-        <p>I designed, developed, and wrote the copy for all 35 "evergreen" emails.</p>
-        <img id="eg-template" src="img/evergreen-template.png" alt="Evergreen email template in regular desktop style">
-        <p>The first step in creating these emails was to design one email template for all 35 "evergreen" emails to maintain consistency. We wanted the design to be minimalistic and simple, drawing all of the attention to the article or resource information. The hero copy and subject lines are the titles of the articles or resources. To allow a visual break from text, I wanted to include a fitting icon for each email in the hero section. The email copy highlights the main points of the article and always includes a call-to-action button at the bottom which links to the article or resource itself.</p>
-
-        <p><strong>Results</strong></p>
-        <p>This project was significant in my internship experience because I was given a lot of wiggle room to make my own design and development decisions. I was able to personally test my skills to identify my strengths and weaknesses.</p>
-        
-      </section>
-
-      <section id="prequal">
-        <div class="container">
-        <h2>Credit Card and Personal Loan Prequalification Templates</h2>
-        <h4>Email and Direct Mail Template Developer</h4>
-        <hr>
-        <p><strong>Situation</strong></p>
-
-        <p><strong>Task</strong></p>
-
-        <p><strong>Action</strong></p>
-
-        <p><strong>Results</strong></p>
-      </section>
-    </div>
-
-    <div id="Accomplishments" class="tabcontent">
-        <h2>My Accomplishments</h2>
-          <p>I developed...<br>
-          &nbsp;&nbsp;&nbsp;<strong>58</strong> new emails.<br>
-          &nbsp;&nbsp;&nbsp;<strong>1</strong> versatile customer relationship management email template.<br>
-          &nbsp;&nbsp;&nbsp;<strong>1</strong> direct mail template.</p>
-
-          <p>Emails I developed...<br>
-          &nbsp;&nbsp;&nbsp;were sent to customers roughly <strong>11 million times</strong> (as of August 20, 2021).<br>
-          &nbsp;&nbsp;&nbsp;achieved a <strong>4.9% click through rate</strong> (as of August 20, 2021).</p>
-
-          <p>I learned...<br>
-          &nbsp;&nbsp;&nbsp;<strong>2</strong> new languages (Shopify Liquid and VML).<br>
-          &nbsp;&nbsp;&nbsp;<strong>6</strong> new development tools (Blueshift, Litmus, Jira, Zeplin, Inkit, AWS).</p>
-          
-          <p>I also...<br>
-          &nbsp;&nbsp;&nbsp;worked on 3 projects.<br>
-          &nbsp;&nbsp;&nbsp;completed 20 Jira tickets.<br>
-          &nbsp;&nbsp;&nbsp;met with 4 non-email related LendingTree employees for networking.<br>
-          &nbsp;&nbsp;&nbsp;observed 1 technical interview for a developer position on the email team.<br>
-          &nbsp;&nbsp;&nbsp;attended intern workshops for professional development.</p>
-    </div>
-
-    <div id="Contributions" class="tabcontent">
-      <h2>My Contributions</h2>
-      <h4>Becoming a valued member of the team</h4>
+      <h3>Overview</h3>
       <hr>
-      <p>Working as only 1 of 3 email developers at LendingTree posed a lot of new learning experiences at the start.</p>
 
-      <p>When I first joined LendingTree as a summer intern, the email team only had two full-time email developers producing all customer-facing emails. As the email developer intern, I quickly learned how to develop emails using new tools like Litmus, Blueshift, and Zeplin, and within a few short weeks, I started producing high-quality emails to keep up with the large influx of Jira tickets. My team placed me on the path for success throughout the entire process, and in return I put forth my best effort. I was able to break the walls of being "the intern" to do more, learn more, and accomplish more for LendingTree as a valued employee.</p>
+      <p>As the student web developer of Purdue University’s Honors College for over 2 years, I have completed numerous website updates for both the <a href="https://honors.purdue.edu/index.php" target="_blank">Honors College</a> and National & International Scholarships Office (<a href="https://www.purdue.edu/niso/?_ga=2.63987560.659029148.1637294958-323452635.1602033746NISO" target="_blank">NISO</a>). My work focuses mainly on using HTML and CSS to make website updates on content management systems.</p>
 
-      <h4>Going beyond email development</h4>
-      <hr>
-      <p>I had several instances of troubleshooting complex problems for both the marketing side and the development side using my programming background.</p>
-      <p>Emails are much more complex than I realized. My day-to-day responsibilities required a lot of troubleshooting technical problems. With heavily dynamic emails, dark mode styling, tons of customer data, accessibility protocols, and auto-login functions, it was inevitable that I ran into several problems that stumped me. Fortunately, I persevered through many issues thanks to my experiences coding in Java, C++, C#, and JavaScript, where similar programming logic applies.</p>
-      <p>Not only did my programming background help directly troubleshoot problems in my emails, it also allowed me to cross-communicate between the technical teams and non-technical teams efficiently. I generally understood the technical team enough to communicate to the creative side in a manner that was understandable for them, and I personally learned a lot about cross-team collaboration as a result.</p>
+      <p>Throughout the two years I’ve been in this position, I’ve used Dreamweaver, Visual Studio Code, Cascade, and WordPress as the website moved from system to system over time. Each time the website has undergone major backend changes, I’ve overcome exploring unfamiliar developer tools to complete tasks. I like to say that this position particularly taught me how to learn as a developer, because many of these initial experiences were brand new to me.</p>
+
+      <p>Some highlights I have for this position are:</p>
+      <ul>
+        <li>Designed a sitemap to prepare for future website renovations</li>
+        <li>Tested website and troubleshot errors when transitioning from server to server</li>
+        <li>Updated website styling when Purdue established new brand platform, “The Next Giant Leap”</li>
+        <li>Designed, developed, and wrote copy for page to <a href="https://honors.purdue.edu/community/congratulations-class-of-2020/" target="_blank">congratulate class of 2020</a> Honors College graduates while ceremonies were virtual due to COVID-19</li>
+      </ul>
+      
+      <div id="quote-container">
+        <blockquote id="quote" cite="hannah-arnett-recommendation-letter.pdf">
+          <i id="left-quote" class="fas fa-quote-left"></i>
+          <p>As our first student web developer in the Purdue Honors College, Hannah set an extremely high bar for the position. Her work was both fast and thorough, and she was indispensable during the many website changes that were made necessary by the COVID-19 pandemic.  She also came to the table with her own ideas and thoughtful suggestions for improvement.  Hannah was a standout employee, and I would recommend her for any website development position.&quot;</p>
+          <p style="text-align: right;"><strong>- Logan Judy</strong><br><em>Former Communications Manager, Honors College, Purdue University</em></p>
+        </blockquote>
+      </div>
+
+      <div class="w3-cell-row">
+        <div class="w3-cell w3-mobile">
+            <h3>Languages I Worked With:</h3>
+            <hr>
+              <p>HTML/CSS<br>
+                PHP</p>
+        </div>
+        <div class="w3-cell w3-mobile">
+            <h3>Tools I Used:</h3>
+            <hr>
+              <p class="inline">Visual Studio Code<br>
+              WordPress<br>
+              Cascade<br>
+              <p class="inline scd-row">Dreamweaver<br>
+              Photoshop</p>
+        </div>
+
+        <div class="w3-cell w3-mobile">
+          <h3>Skills I Developed:</h3>
+          <hr>
+            <p>front-end developing<br>
+            web designing<br>
+            web UX/UI<br>
+        </div>
+      </div>
+
     </div>
+
+    <div id="CILMAR" class="tabcontent">
+
+      <h3>Overview</h3>
+      <hr>
+
+      <p>As the student web developer of Purdue University’s Center for Intercultural Learning, Mentorship, Assessment, and Research (<a href="https://www.purdue.edu/IPPU/CILMAR/" target="_blank">CILMAR</a>) for over 2 years, I have completed numerous website updates, assisted with multiple projects, and worked on graphic designs. My work focuses mainly on using HTML and CSS to make website updates on the content management system, Cascade.</p>
+
+      <p>When I was first hired into this position, the CILMAR website was undergoing major website updates in both its design and structure, which required a great deal of my knowledge and skills. I helped construct the main navigation menu and homepage alongside the Senior Public Relations Consultant, Annette Benson, who headed the renovations project. I also handled internal website file organization. This position was my first time working on a website in a professional setting outside of my high school, so I had many significant experiences that built on my developing and marketing skills.</p>
+
+      <p>Another project I helped with was CILMAR’s “<a href="https://purdue.edu/IPPU/CILMAR/Learning/VirtualICL/index.html?_ga=2.92681178.659029148.1637294958-323452635.1602033746#SUZ" target="_blank">Step Up Zone</a>” where I collaborated with a graphic designer to design the logo.</p>
+
+      <p>Some highlights I have for this position are:</p>
+      <ul>
+        <li>Redesigning and developing Staff Directory</li>
+        <li>Consulting with Senior Public Relations Consultant regarding web update decisions</li>
+        <li>Designing poster graphics on Canva along with various graphics throughout website</li>
+      </ul>
+
+      <div class="w3-cell-row">
+        <div class="w3-cell w3-mobile">
+            <h3>Languages I Worked With:</h3>
+            <hr>
+              <p>HTML/CSS</p>
+          </div>
+        <div class="w3-cell w3-mobile">
+          <h3>Tools I Used:</h3>
+           <hr>
+            <p class="inline">Cascade<br>
+              Canva<br>
+              Photoshop</p>
+            <p class="inline scd-row">Illustrator</p>
+        </div> 
+
+        <div class="w3-cell w3-mobile">
+          <h3>Skills I Developed:</h3>
+          <hr>
+          <p>front-end developing<br>
+          web designing<br>
+          graphic designing<br>
+          web UX/UI<br>
+          marketing</p>
+        </div>
+      </div>
+
+        <div class="w3-cell-row" id="images">
+          <div class="w3-cell w3-mobile">
+            <img src="img/cilmar.png" alt="poster for graduate student CILMAR events" />
+          </div>
+          <div class="w3-cell w3-mobile">
+            <img src="img/writing-group.png" alt="poster for CILMAR writing group" />
+          </div>
+          <div class="w3-cell w3-mobile">
+            <img src="img/sail.png" alt="poster for SAIL scholarship" />
+          </div>
+        </div>
+        
+    </div>
+    
     <!-- END Body Container -->
 
     <!-- Footer Container -->

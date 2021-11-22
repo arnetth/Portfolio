@@ -21,6 +21,7 @@ p#strategic {
 div#hero-image {
     padding-left: 100px;
     padding-right: 50px;
+    vertical-align: middle;
 }
 
 img#car {
@@ -61,7 +62,7 @@ a#pes-link {
 }
 
 a#pes-link:hover {
-    color: #
+    color: #929292;
 }
 
 h4 {
@@ -85,6 +86,14 @@ img#pes-home {
     height: auto;
     margin: 20px auto;
     display: block;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+img#banner {
+    width: 600px;
+    height: auto;
+    margin: 30px auto;
+    display: block;
 }
 
 /* **********Tablet Styling ********** */
@@ -95,35 +104,25 @@ img#pes-home {
     header {
         position: static;
         padding-left: 60px;
+        margin-top: 20px;
     }
     
     div#heading-text {
         font-size: 22px !important;
         padding-right: 0;
+        vertical-align: middle;
     }
     
-    p#my-style {
+    p#strategic {
         margin-bottom: 20px;
-    }
-    
-    a#work-btn {
-        width: 180px;
-        padding: 15px 20px;
-    }
-    
-    a#resume-btn {
-        width: 130px;
-        height: auto;
-        padding: 10px 20px;
-        margin-left: 5px;
     }
     
     div#hero-image {
         padding-left: 50px;
     }
     
-    img#sunflower {
-        max-width: 320px;
+    img#car {
+        max-width: 100%;
     }
     
     /* Body Content Styling */
@@ -139,81 +138,8 @@ img#pes-home {
         margin: 20px 0;
     }
 
-    section#summary-icons {
-        margin: 0 auto;
-        display: block;
-    }
-
-    div.icon-col {
-        width: 200px;
-        padding: 0 20px;
-    }
-    
-    section#summary-icons p {
-        margin: 0;
-    }
-    
-    section#summary-icons i {
-        font-size: 48px;
-        margin-bottom: 20px;
-    }
-
-    div#tools-col {
-        padding-left: 30px;
-    }
-    
-    p.scd-row {
-        padding-left: 0;
-    }
-    
-    div.mleft-30 {
-        margin-left: 30px;
-    }
-    
-    div.card {
-        width: 280px;
-    }
-    
-    div.card-container h3 {
-        font-size: 18px;
-    }
-
-    .card-container {
-        padding: 0 7px;
-    }
-
-    div#cultures {
-        margin-left: 0 !important;
-    }
-    
-    img#img-professional {
-        width: 200px;
-    }
-
-    div#about-text {
-        padding-left: 60px;
-    }
-    
-    a#resume-btn-full {
-        margin: 20px 0 10px 0;
-        padding: 15px 20px;
-        width: 200px;
-    }
-
-    section#about p {
-        line-height: 150%;
-    }
-    
-    div#quote-container {
-        width: 100%;
-    }
-    
-    i#left-quote {
-        font-size: 22px;
-    }
-
-    div.col-spacing {
-        width: 200px !important;
+    img#pes-home {
+        margin: 50px auto;
     }
 }
 
@@ -234,7 +160,7 @@ img#pes-home {
         padding: 0 30px;
     }
 
-    p#my-style {
+    p#strategic {
         margin-bottom: 30px;
     }
 
@@ -243,30 +169,10 @@ img#pes-home {
         z-index: 90;
     }
     
-    img#sunflower {
-        max-width: 100%;
+    img#car {
+        max-width: 90%;
         margin: 0 auto;
         display: block;
-    }
-
-    .center {
-        display: block;
-        margin: auto;
-        text-align: center;
-    }
-
-    a#work-btn {
-        font-size: 16px;
-        width: 170px;
-        padding: 15px 5px;
-    }
-
-    a#resume-btn {
-        font-size: 16px;
-        width: 120px;
-        padding: 12px 5px;
-        border: 3px solid #FFFFFF;
-        margin-left: 5px;
     }
 
     /* Body Styles */
@@ -276,111 +182,14 @@ img#pes-home {
 
     h2 {
         font-size: 20px;
-    }    
-
-    section#summary-icons {
-        margin: 20px 0;
-        text-align: center;
     }
     
-    section#summary-icons p {
-        margin: 5px 30px 30px 30px;
-        text-align: center;
-        font-size: 18px;
-    }
-    
-    section#summary-icons i {
-        font-size: 48px;
-        margin: 10px 0;
-    }
-
     p.scd-row {
-        display: block;
-        padding: 20px 0 0 0 !important;
+        padding-left: 0;
     }
 
-    div.mleft-30 {
-        margin-left: 0;
+    img#pes-home, img#banner {
+        max-width: 100%;
     }
 
-    div.card {
-        width: 100%;
-    }
-    
-    img.card-image {
-        width: 100%;
-        height: auto;
-    }
-    
-    div.card-container h3 {
-        font-size: 18px;
-    }
-
-    blockquote#quote {
-        margin: 0;
-    }
-  
-    div#quote-container {
-        padding: 0;
-        width: 100%;
-        height: auto;
-        margin: 0;
-        display: block;
-    }
-
-    i#left-quote {
-        font-size: 20px;
-    }
-
-    section#about p {
-        line-height: 150%;
-    }
-
-    div#quote-container p {
-        padding-left: 35px;
-        line-height: 200%;
-    }
-
-    div#quote-container {
-        width: 100%;
-        margin: 20px auto;
-        display: block;
-    }
-    
-    i#left-quote {
-        font-size: 22px;
-    }
-
-    img#img-professional-mobile {
-        width: 200px;
-        height: auto;
-        display: block;
-        margin: 0 auto;
-    }
-
-    a#resume-btn-full-mobile {
-        display: block;
-        background-color: #004AAD;
-        color: #FFFFFF;
-        text-decoration: none;
-        padding: 15px 30px;
-        text-align: center;
-        width: 230px;
-        height: auto;
-        margin: 20px auto;
-    }
-    
-    a#resume-btn-full-mobile:hover {
-        background-color: #07336d;
-        transition: .3s ease;
-    }
-
-    section#contact i {
-        font-size: 64px;
-        text-align: center;
-    }
-
-    div#socials {
-        text-align: center;
-    }
 }
