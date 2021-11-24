@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<title>Hannah Arnett</title>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tenor+Sans">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap">
+<script src="https://kit.fontawesome.com/508221f109.js" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" href="css/hamburgers.css">
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/courses.css">
+
+<link rel="icon" href="img/ha-icon.png">
+
+<body>
+
+  <div id="black-container">
+
+    <!-- Nav Container -->
+    <div id="nav-holder">
+      <div id="navbar" class="w3-bar">
+        <a href="home.html" alt="link to home"><h1 id="ha" class="w3-bar-item w3-animate-opacity">Hannah Arnett</h1></a>
+
+        <!-- Desktop Menu -->
+        <nav id="desktop-menu" class="w3-hide-medium w3-hide-small">
+          <a href="home.html#work" class="w3-bar-item w3-animate-opacity">work</a>
+          <a href="home.html#about" class="w3-bar-item w3-animate-opacity">about</a>
+          <a href="home.html#contact" class="w3-bar-item w3-animate-opacity">contact</a>
+        </nav>
+
+        <!-- Mobile Menu Button -->
+        <button id="icon" alt="button to open mobile menu" class="hamburger hamburger--squeeze w3-bar-item content w3-animate-opacity w3-hide-large" type="button" onclick="openMenu()">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
+
+        
+      </div>
+    </div>
+    <!-- Mobile Menu Dropdown -->
+    <nav id="mobile-menu" class="w3-bar-block w3-hide w3-hide-large">
+      <a href="home.html#work" class="w3-bar-item w3-mobile" onclick="closeMenu()">work</a>
+      <hr>
+      <a href="home.html#about" class="w3-bar-item w3-mobile" onclick="closeMenu()">about</a>
+      <hr>
+      <a href="home.html#contact" class="w3-bar-item w3-mobile" onclick="closeMenu()">contact</a>
+    </nav>
+  
+    <!-- END Nav Container -->
+
+    <!-- Heading Container -->
+    <header>
+      <div class="w3-cell-row">
+        <div class="w3-container w3-cell w3-mobile w3-animate-top w3-cell-middle" id="heading-text">
+          <p style="font-weight: bold;">Coursework I completed that are&nbsp;relevant to my field.</p>
+          <p id="ux">UX design, project management,&nbsp;video editing</p>
+        </div>
+        
+        <div class="w3-cell w3-mobile w3-animate-right" id="hero-image">
+          <img src="img/arch.png" id="arch" alt="Purdue University arch colored in all white" />
+        </div>
+      </div>
+    </header>
+    <!-- END Heading Container -->
+
+    <!-- END Black Container -->
+  </div>
+
+  <div id="container">
+
+    <button onclick="topFunction()" id="top" title="Go to top"><i class="fas fa-arrow-up"></i> Top</button>
+
+    <!-- Body Container -->
+    
+    <section id="craigslist">
+      <div class="container">
+        <h2>User Experience Design</h2>
+        <hr>
+        <div class="w3-cell-row">
+          <div style="vertical-align: top;" class="w3-cell w3-mobile">
+            <p><strong>craigslist Homepage Redesign</strong></p>
+            <p>Designed by me after secondary research, conducting a heuristic evaluation of the original homepage, and creating a moodboard and style guide. A/B testing with participants was performed in comparison to the original craigslist homepage and resulted in more positive associations towards this redesign.</p>
+            <p style="font-size: 10px; line-height: 100%;">Shopping cart photo by Ivan Samkov from Pexels, couch photo by Andrea Piacquadio from Pexels, shirt on hanger photo by Liza Summer from Pexels, and clothes on rack photo by Sam Lion from Pexels</p>
+          </div>
+          <div class="w3-cell w3-mobile">
+            <img src="img/craigslist.png" id="redesign" alt="craigslist homepage redesign" />
+          </div>
+        </div>
+        
+      </div>
+    </section>
+
+    <section id="ioc">
+      <div class="container">
+        <h2>Project Management and Video&nbsp;Editing</h2>
+        <hr>
+        <div class="w3-cell-row">
+          <div style="vertical-align: top;" class="w3-cell w3-mobile">
+            <p><strong>"Intersection of Cultures"</strong></p>
+            <p>I partook in a virtual creative and culture exchange program where Purdue University students collaborated with students from ITM and Universidad de Antioquia of Colombia.</p>
+            <p>"Intersection of Cultures" is an immersive map of an imaginary town that is a combination of Medellin, Colombia and West Lafayette, IN, US. I worked together with students from both Purdue and ITM to create this project to be displayed in a Purdue art exhibit.</p>
+            <p>I managed the project from start to finish and edited the videos using Adobe After Effects. My original idea was to create an interactive map where exhibit visitors could use a hand controller to personally move around the map and explore it, but because of COVID-19 restrictions, we could only use a video displayed on a projector.</p>
+          </div>
+          <div class="w3-cell w3-mobile">
+            <img src="img/estudio.PNG" alt="Open Estudio logo" id="estudio" />
+          </div>
+        </div>
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/l1vfVoYQmYM" id="video" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+      </div>
+    </section>
+
+    <!-- END Body Container -->
+
+    <!-- Footer Container -->
+    <footer>
+      <h2 id="thanks">Thanks for checking me out!</h2>
+
+      <a id="ha-logo" href="home.html"><img src="img/ha-logo.png" alt="Hannah Arnett's logo"  width="50" /></a>
+      <p id="footer-text" style="text-align: center;">designed and developed by Hannah Arnett, 2021</p>
+    </footer>
+    <!-- END Footer Container -->
+
+  <!-- END Container -->
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

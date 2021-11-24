@@ -184,7 +184,7 @@
           <p>To increase the number of Student Loan Hero email subscribers</p>
         
           <p><strong>Project Summary</strong></p>
-          <p>Early on in my internship, LendingTree’s child company, Student Loan Hero, was holding a scholarship giveaway for any high school or college students who signed up using their email. In this way, more people would subscribe to the mailing list. One of my coworkers on the email marketing side of the team ran the email campaign for this giveaway, and she reached out to me for help. She felt that the email subject lines and preheaders that they were using for promoting this giveaway were not were not attractive enough to grab the attention of users, so she asked me to think of some creative subject lines and preheaders that we could use to freshen up this campaign.</p>
+          <p>Early on in my internship, LendingTree’s child company, Student Loan Hero, was holding the Smart Money giveaway for any high school or college students who signed up using their email. In this way, more people would subscribe to the mailing list. One of my coworkers on the email marketing side of the team ran the email campaign for this giveaway, and she reached out to me for help. She felt that the email subject lines and preheaders that they were using for promoting this giveaway were not were not attractive enough to grab the attention of users, so she asked me to think of some creative subject lines and preheaders that we could use to freshen up this campaign.</p>
 
           <button class="accordion">Read More...</button>
           <div class="panel">
@@ -193,10 +193,10 @@
             <p>While brainstorming, I reflected on my own experiences receiving scholarship emails. As a tuition-paying college student, I am well versed with emails sent from companies like Student Loan Hero. Personalized subject lines tend to attract my attention more, especially if it mentions my school. Some of Student Loan Hero’s competitors did this. The giveaway campaign’s old subject lines and preheaders were not personalized, or sometimes just with the users’ first names. From this, my main objective was to create some unique, personalized subject lines and preheaders. I knew that we could use <strong>Shopify Liquid</strong> to accomplish this.</p>
             <p>Here are a few subject lines and preheaders that I came up with:</p>
             <div id="subject-pre">
-              <p>subject line</p>
-              <p>preheader</p>
-              <p>subject line</p>
-              <p>preheader</p>
+              <p>SL: {{FIRST NAME | camelcase}}, it's simple math. You + {{SCHOOL NAME | camelcase}} + Our Giveaway</p>
+              <p>PH: Sign up for our Smart Money Giveaway for a chance to win $1,000</p>
+              <p>SL: {{FIRST NAME | camelcase}}, we know paying for college is stressful, but our scholarship giveaway isn't</p>
+              <p>PH: We make it easy to sign up for our Smart Money Giveaway</p>
             </div>
             <p>After receiving feedback from my coworker and a few others leading this giveaway campaign, we made a few edits together. The next step for me was to test the subject lines and preheaders using Blueshift and Litmus to confirm that the users' personal data were displaying properly when emails were sent. My subject lines and preheaders were then added to the mix of emails sent out to users.</p>
             <p><strong>Results</strong></p>

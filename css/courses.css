@@ -4,6 +4,7 @@
 header {
     position: static;
     padding-left: 100px;
+    padding-top: 30px;
 }
 
 div#heading-text {
@@ -12,18 +13,19 @@ div#heading-text {
     padding: 0;
 }
 
-p#original {
+p#ux {
     margin-bottom: 50px;
     font-weight: 300;
 }
 
 div#hero-image {
-    padding-left: 300px;
+    padding-left: 100px;
 }
 
-img#portfolio-hero {
-    max-width: 500px;
+img#arch {
+    max-width: 700px;
     height: auto;
+    vertical-align: bottom;
 }
 
 /* Body Content Styling */
@@ -39,46 +41,28 @@ h2 {
     color: #444440;
 }
 
-h3 {
-    font-family: Poppins, Arial, sans-serif;
-    font-size: 18px;
-}
-
 div.container {
     margin: 30px 0;
 }
 
-img#HA-logo {
-    width: 200px;
+img#redesign {
+    width: 400px;
     height: auto;
-    margin-bottom: 30px;
-}
-
-.scd-row {
-    padding-left: 30px;
-}
-
-.inline {
-    display: inline-block;
-    vertical-align: top;
-}
-
-h4 {
-    color: #444440;
-    font-size: 18px;
-    font-family: Poppins, Arial, sans-serif;
-    letter-spacing: 1.2%;
-}
-
-img#figma {
-    display: block;
-    margin: 20px auto;
-    width: 500px;
-    height: auto;
+    margin: 0 20px;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
+img#estudio {
+    width: 300px;
+    height: auto;
+    margin: 0 20px;
+}
 
+#video {
+    margin: 50px auto;
+    display: block;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
 
 /* **********Tablet Styling ********** */
 
@@ -95,17 +79,29 @@ img#figma {
         padding-right: 0;
     }
     
-    p#original {
+    p#my-style {
         margin-bottom: 20px;
     }
     
-    
-    div#hero-image {
-        padding-left: 50px;
+    a#work-btn {
+        width: 180px;
+        padding: 15px 20px;
     }
     
-    img#portfolio-hero {
-        max-width: 320px;
+    a#resume-btn {
+        width: 130px;
+        height: auto;
+        padding: 10px 20px;
+        margin-left: 5px;
+    }
+    
+    div#hero-image {
+        padding-left: 20px;
+        vertical-align: bottom;
+    }
+    
+    img#arch {
+        max-width: 350px;
     }
     
     /* Body Content Styling */
@@ -121,17 +117,13 @@ img#figma {
         margin: 20px 0;
     }
 
-    img#HA-logo {
-        width: 100px;
-        margin-bottom: 10px;
-    }
-    
-    p.scd-row {
-        padding: 0;
+    img#redesign {
+        width: 300px;
+        margin: 0 20px;
     }
 
-    img#figma {
-        margin: 35px auto;
+    img#estudio {
+        width: 200px;
     }
 }
 
@@ -152,7 +144,7 @@ img#figma {
         padding: 0 30px;
     }
 
-    p#original {
+    p#ux {
         margin-bottom: 30px;
     }
 
@@ -161,7 +153,7 @@ img#figma {
         z-index: 90;
     }
     
-    img#portfolio-hero {
+    img#arch {
         max-width: 100%;
         margin: 0 auto;
         display: block;
@@ -174,19 +166,21 @@ img#figma {
 
     h2 {
         font-size: 20px;
-    }    
-
-    img#HA-logo {
-        width: 100px;
-        margin-bottom: 10px;
     }
 
-    p.scd-row {
+    img#redesign {
+        max-width: 100%;
+        margin: 20px auto;
         display: block;
-        padding: 0 !important;
     }
 
-    img#figma {
-        width: 100%;
+    img#estudio {
+        width: 200px;
+        margin: 0 auto;
+        display: block;
+    }
+
+    #video {
+        max-width: 100%;
     }
 }

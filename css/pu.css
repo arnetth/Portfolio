@@ -75,7 +75,7 @@ img#PU-logo {
     background-color: #ddd;
 }
   
-.tab button.active {
+.tab button.activeTab {
     background-color: #ccc;
 }
   
