@@ -91,6 +91,28 @@ img#LT-logo {
     to {opacity: 1;}
   }
 
+  div#quote-container {
+    padding: 10px 20px 10px 10px;
+    width: 70%;
+    margin: 30px auto;
+    display: block;
+}
+
+i#left-quote {
+    float: left;
+    color: #444440;
+    font-size: 24px;
+}
+
+div#quote-container p {
+    padding-left: 40px;
+    line-height: 200%;
+}
+
+section#contact p {
+    line-height: 200%;
+}
+
 div#images {
     text-align: center;
 }
@@ -252,6 +274,18 @@ div#Accomplishments p {
         padding: 10px 20px;
     }
 
+    section#about p {
+        line-height: 150%;
+    }
+    
+    div#quote-container {
+        width: 100%;
+    }
+    
+    i#left-quote {
+        font-size: 22px;
+    }
+
     img#desktop, img#darkmode {
         width: 200px;
     }
@@ -353,6 +387,25 @@ div#Accomplishments p {
         padding: 15px 0;
         border-top: none;
         animation: fadeEffect .3s;
+    }
+
+    blockquote#quote {
+        margin: 0;
+    }
+
+    div#quote-container p {
+        padding-left: 35px;
+        line-height: 200%;
+    }
+
+    div#quote-container {
+        width: 100%;
+        margin: 20px auto;
+        display: block;
+    }
+    
+    i#left-quote {
+        font-size: 22px;
     }
 
     .panel {

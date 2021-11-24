@@ -141,6 +141,10 @@ img#banner {
     img#pes-home {
         margin: 50px auto;
     }
+    
+    p.scd-row {
+        padding-left: 0;
+    }
 }
 
 /* **********Mobile Styling ********** */

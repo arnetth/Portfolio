@@ -481,18 +481,6 @@ section#contact i:hover {
     blockquote#quote {
         margin: 0;
     }
-  
-    div#quote-container {
-        padding: 0;
-        width: 100%;
-        height: auto;
-        margin: 0;
-        display: block;
-    }
-
-    i#left-quote {
-        font-size: 20px;
-    }
 
     section#about p {
         line-height: 150%;
