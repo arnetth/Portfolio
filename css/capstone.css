@@ -94,6 +94,7 @@ blockquote p {
 iframe {
     display: block;
     margin: 30px auto;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
 #instagram, #youtube {
@@ -115,10 +116,9 @@ iframe {
         padding-right: 0;
     }
     
-    p#original {
+    p#partnership {
         margin-bottom: 20px;
     }
-    
     
     div#hero-image {
         padding-left: 50px;
@@ -139,6 +139,14 @@ iframe {
     
     div.container {
         margin: 20px 0;
+    }
+
+    blockquote {
+        width: 80%;
+    }
+
+    iframe {
+        width: 100%;
     }
 
     img#HA-logo {

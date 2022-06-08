@@ -91,7 +91,7 @@ img#LT-logo {
     to {opacity: 1;}
   }
 
-  div#quote-container {
+  blockquote {
     padding: 10px 20px 10px 10px;
     width: 70%;
     margin: 30px auto;
@@ -104,7 +104,7 @@ i#left-quote {
     font-size: 24px;
 }
 
-div#quote-container p {
+blockquote p {
     padding-left: 40px;
     line-height: 200%;
 }
@@ -278,7 +278,7 @@ div#Accomplishments p {
         line-height: 150%;
     }
     
-    div#quote-container {
+    blockquote {
         width: 100%;
     }
     
@@ -389,19 +389,11 @@ div#Accomplishments p {
         animation: fadeEffect .3s;
     }
 
-    blockquote#quote {
-        margin: 0;
-    }
-
-    div#quote-container p {
+    blockquote {
+        margin: 20px 0;
         padding-left: 35px;
         line-height: 200%;
-    }
-
-    div#quote-container {
         width: 100%;
-        margin: 20px auto;
-        display: block;
     }
     
     i#left-quote {

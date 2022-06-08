@@ -107,7 +107,7 @@ h4 {
     vertical-align: top;
 }
 
-div.quote-container {
+blockquote {
     padding: 10px 20px 10px 10px;
     width: 70%;
     margin: 30px auto;
@@ -120,7 +120,7 @@ i.left-quote {
     font-size: 24px;
 }
 
-div.quote-container p {
+blockquote p {
     padding-left: 40px;
     line-height: 200%;
 }
@@ -183,7 +183,7 @@ div#images img {
         display: block;
     }
     
-    div.quote-container {
+    blockquote {
         width: 100%;
     }
     
@@ -249,12 +249,8 @@ div#images img {
         display: block;
         padding: 20px 0 0 0 !important;
     }
-
-    blockquote.quote {
-        margin: 0;
-    }
   
-    div.quote-container {
+    blockquote {
         padding: 0;
         width: 100%;
         height: auto;
@@ -262,15 +258,9 @@ div#images img {
         display: block;
     }
 
-    div.quote-container p {
+    blockquote p {
         padding-left: 35px;
         line-height: 200%;
-    }
-
-    div.quote-container {
-        width: 100%;
-        margin: 20px auto;
-        display: block;
     }
     
     div#images img {

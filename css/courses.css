@@ -58,7 +58,7 @@ img#estudio {
     margin: 0 20px;
 }
 
-#video {
+iframe {
     margin: 50px auto;
     display: block;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
@@ -180,7 +180,8 @@ img#estudio {
         display: block;
     }
 
-    #video {
+    iframe {
         max-width: 100%;
+        height: auto;
     }
 }

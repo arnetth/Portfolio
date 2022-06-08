@@ -264,28 +264,6 @@ section#contact i:hover {
         margin: 20px 0;
     }
 
-    section#summary-icons {
-        margin: 0 auto;
-        display: block;
-        text-align: left !important;
-    }
-
-    div.icon-col {
-        width: 200px;
-        padding: 0 20px;
-        text-align: left !important;
-    }
-    
-    section#summary-icons p {
-        margin: 0;
-        text-align: left !important;
-    }
-    
-    section#summary-icons i {
-        font-size: 48px;
-        margin-bottom: 20px;
-    }
-
     div#tools-col {
         padding-left: 30px;
     }
@@ -295,6 +273,10 @@ section#contact i:hover {
     }
     
     div.mleft-30 {
+        margin-left: 30px;
+    }
+
+    #courses {
         margin-left: 30px;
     }
     
@@ -308,10 +290,6 @@ section#contact i:hover {
 
     .card-container {
         padding: 0 7px;
-    }
-
-    div#cultures {
-        margin-left: 0 !important;
     }
     
     img#img-professional {
@@ -328,12 +306,12 @@ section#contact i:hover {
         width: 200px;
     }
 
-    section#about p {
-        line-height: 150%;
-    }
-    
-    div#quote-container {
+    blockquote {
         width: 100%;
+    }
+
+    blockquote p {
+        line-height: 150%;
     }
     
     i#left-quote {
@@ -404,22 +382,6 @@ section#contact i:hover {
 
     h2 {
         font-size: 20px;
-    }    
-
-    section#summary-icons {
-        margin: 20px 0;
-        text-align: center;
-    }
-    
-    section#summary-icons p {
-        margin: 5px 30px 5px 30px;
-        text-align: center;
-        font-size: 18px;
-    }
-    
-    section#summary-icons i {
-        font-size: 48px;
-        margin: 10px 0;
     }
 
     p.scd-row {
@@ -449,23 +411,18 @@ section#contact i:hover {
         font-size: 18px;
     }
 
-    blockquote#quote {
-        margin: 0;
-    }
-
     section#about p {
         line-height: 150%;
     }
 
-    div#quote-container p {
-        padding-left: 35px;
-        line-height: 200%;
-    }
-
-    div#quote-container {
+    blockquote {
         width: 100%;
         margin: 20px auto;
-        display: block;
+    }
+
+    blockquote p {
+        padding-left: 35px;
+        line-height: 200%;
     }
     
     i#left-quote {
