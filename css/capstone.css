@@ -1,0 +1,226 @@
+/* ********** Desktop and Website Styling ********** */
+
+/* Hero Styling */
+header {
+    position: static;
+    padding-left: 100px;
+}
+
+div#heading-text {
+    font-size: 30px !important;
+    font-family: Poppins, Arial, sans-serif;
+    padding: 0;
+}
+
+p#partnership {
+    margin-bottom: 50px;
+    font-weight: 300;
+}
+
+div#hero-image {
+    padding-left: 300px;
+}
+
+img#portfolio-hero {
+    max-width: 500px;
+    height: auto;
+}
+
+/* Body Content Styling */
+div#container {
+    background-color: #FFFFFF;
+    padding: 30px 100px;
+    line-height: 180%;
+}
+
+h2 {
+    font-family: 'Tenor Sans', Arial, sans-serif;
+    font-size: 24px;
+    color: #444440;
+}
+
+h3 {
+    font-family: Poppins, Arial, sans-serif;
+    font-size: 18px;
+}
+
+div.container {
+    margin: 30px 0;
+}
+
+img#uniteus-logo {
+    width: 200px;
+    height: auto;
+    margin-bottom: 30px;
+}
+
+.scd-row {
+    padding-left: 30px;
+}
+
+.inline {
+    display: inline-block;
+    vertical-align: top;
+}
+
+h4 {
+    color: #444440;
+    font-size: 18px;
+    font-family: Poppins, Arial, sans-serif;
+    letter-spacing: 1.2%;
+}
+
+.mleft-10 {
+    margin-left: 15px;
+}
+
+blockquote {
+    padding: 10px 20px 10px 10px;
+    width: 50%;
+    margin: auto;
+}
+
+.left-quote {
+    float: left;
+    color: #444440;
+    font-size: 24px;
+}
+
+blockquote p {
+    padding-left: 40px;
+    line-height: 200%;
+}
+
+iframe {
+    display: block;
+    margin: 30px auto;
+}
+
+#instagram, #youtube {
+    font-size: 36px;
+}
+
+/*
+figure {
+    float: left;
+    text-align: center;
+    font-size: 13px;
+    margin: 5px;
+}
+
+figure img {
+    width: 200px;
+    height: auto;
+    border: 1px solid #444440;
+}*/
+
+/* **********Tablet Styling ********** */
+
+@media screen and (min-width: 601px) and (max-width: 1000px) {
+
+    /* Hero Styling */
+    header {
+        position: static;
+        padding-left: 60px;
+    }
+    
+    div#heading-text {
+        font-size: 22px !important;
+        padding-right: 0;
+    }
+    
+    p#original {
+        margin-bottom: 20px;
+    }
+    
+    
+    div#hero-image {
+        padding-left: 50px;
+    }
+    
+    img#portfolio-hero {
+        max-width: 320px;
+    }
+    
+    /* Body Content Styling */
+    div#container {
+        padding: 20px 60px;
+    }
+    
+    h2 {
+        font-size: 20px;
+    }
+    
+    div.container {
+        margin: 20px 0;
+    }
+
+    img#HA-logo {
+        width: 100px;
+        margin-bottom: 10px;
+    }
+    
+    p.scd-row {
+        padding: 0;
+    }
+
+    img#figma {
+        margin: 35px auto;
+    }
+}
+
+/* **********Mobile Styling ********** */
+
+@media screen and (max-width: 600px) {
+
+    /* Header Styles */
+
+    header {
+        position: relative;
+        padding: 0;
+    }
+
+    div#heading-text {
+        font-size: 20px !important;
+        padding: 0;
+        padding: 0 30px;
+    }
+
+    p#original {
+        margin-bottom: 30px;
+    }
+
+    div#hero-image {
+        padding: 30px 0 0 0;
+        z-index: 90;
+    }
+    
+    img#portfolio-hero {
+        max-width: 100%;
+        margin: 0 auto;
+        display: block;
+    }
+
+    /* Body Styles */
+    div#container {
+        padding: 20px 30px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }    
+
+    img#HA-logo {
+        width: 100px;
+        margin-bottom: 10px;
+    }
+
+    p.scd-row {
+        display: block;
+        padding: 0 !important;
+    }
+
+    img#figma {
+        width: 100%;
+    }
+}

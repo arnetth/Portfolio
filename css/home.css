@@ -83,35 +83,6 @@ div.container {
     margin: 30px 0;
 }
 
-section#summary-icons {
-    margin: 10px auto;
-    display: block;
-    text-align: center;
-}
-
-div.icon-col {
-    width: 400px;
-    padding: 0 30px;
-}
-
-section#summary-icons i {
-    font-size: 50px;
-    color: #444440;
-    margin-bottom: 10px;
-}
-
-p.arrow-link {
-    padding-top: 20px;
-}
-
-p.arrow-link a {
-    text-decoration: none;
-}
-
-p.arrow-link a:hover {
-    color: #929292;
-}
-
 p.line-height-180 {
     line-height: 180%;
 }
@@ -184,7 +155,7 @@ a#resume-btn-full:hover {
     transition: .3s ease;
 }
 
-div#quote-container {
+blockquote {
     padding: 10px 20px 10px 10px;
     width: 70%;
     margin: 30px auto;
@@ -197,7 +168,7 @@ i#left-quote {
     font-size: 24px;
 }
 
-div#quote-container p {
+blockquote p {
     padding-left: 40px;
     line-height: 200%;
 }
